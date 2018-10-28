@@ -20,7 +20,7 @@ router.get('/stations/:id', (req, res, next) => {
   const id = req.params.id;
 
   weatherstem.post('https://leon.weatherstem.com/api', {
-  api_key: '2r67hetp', stations: [id]
+  api_key: 'noway', stations: [id]
 })
   .then((data) => {
     res.json({
