@@ -6,7 +6,7 @@ const { ApiRequest } = require('./../middleware/fetch');
 const weatherstem = new ApiRequest();
 
 router.get('/', (req, res, next) => {
-  res.send('This is weatherstem test endpoint!');
+  res.send('This is WeatherSTEM Endpoint');
 });
 
 router.get('/stations', (req, res, next) => {
