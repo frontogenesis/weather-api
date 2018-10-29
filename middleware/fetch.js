@@ -1,48 +1,30 @@
 const fetch = require('node-fetch');
 
-// class ApiRequest {
-//   post(url = ``, data = {}) {
-//     return fetch(url, {
-//       method: 'POST',
-//       body: JSON.stringify(data),
-//       headers: { 'Content-Type': 'application/json' },
-//     })
-//     .then(response => {
-//       if (response.ok) {
-//         return response.json();
-//       } else {
-//         throw new Error('Something went bad');
-//       }
-//     })
-//     .catch(console.error)
-//   };
-//   get(url = ``) {
-//     return fetch(url)
-//       .then(response => response.json())
-//   };
-// }
-
 class ApiRequest {
-  async post(url = ``, data = {}) {
-    try {
-      const response = await fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: { 'Content-Type': 'application/json' }
-      });
-      return response.json();
-    } catch(error) {
-      throw new Error('Send 400 error back');
+  constructor(url) { this.url = url };
+  async post(data = {}) {
+    const response = await fetch(this.url, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      return data;
+    } else {
+      throw new Error(JSON.stringify({ message: 'Unable to retrieve data' }));
     }
   };
-  async get(url = ``) {
-    try {
-      const response = await fetch(url);
+  async get() {
+    const response = await fetch(this.url);
+
+    if (response.ok) {
       return response.json();
-    } catch(error) {
-      throw new Error('Send 400 error back')
+    } else {
+      throw new Error({ message: 'Unable to retrieve data' });
     }
   };
-}
+};
 
 module.exports = { ApiRequest };
