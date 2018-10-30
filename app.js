@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const hbs = require('hbs');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -12,7 +13,8 @@ const alertsRouter = require('./routes/alerts');
 
 const app = express();
 
-// view engine setup
+// HANDLEBARS - view engine setup
+hbs.registerPartials(__dirname + '/views/partials');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
