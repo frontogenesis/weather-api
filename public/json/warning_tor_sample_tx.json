@@ -1,0 +1,3580 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld",
+    {
+      "wx": "https://api.weather.gov/ontology#",
+      "@vocab": "https://api.weather.gov/ontology#"
+    }
+  ],
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194446-2809187",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.08,
+              30.17
+            ],
+            [
+              -97.14999999999999,
+              30.25
+            ],
+            [
+              -96.89999999999999,
+              30.47
+            ],
+            [
+              -96.89999999999999,
+              30.459999999999997
+            ],
+            [
+              -96.88,
+              30.459999999999997
+            ],
+            [
+              -96.86999999999999,
+              30.429999999999996
+            ],
+            [
+              -96.85,
+              30.429999999999996
+            ],
+            [
+              -96.8199999,
+              30.419999999999995
+            ],
+            [
+              -96.7099999,
+              30.269999999999996
+            ],
+            [
+              -97.08,
+              30.17
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194446-2809187",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194446-2809187",
+        "areaDesc": "Bastrop, TX; Lee, TX",
+        "geocode": {
+          "UGC": [
+            "TXC021",
+            "TXC287"
+          ],
+          "SAME": [
+            "048021",
+            "048287"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC021",
+          "https://api.weather.gov/zones/county/TXC287"
+        ],
+        "references": [],
+        "sent": "2018-10-31T16:15:00-05:00",
+        "effective": "2018-10-31T16:15:00-05:00",
+        "onset": "2018-10-31T16:15:00-05:00",
+        "expires": "2018-10-31T16:45:00-05:00",
+        "ends": "2018-10-31T16:45:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Tornado Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Austin/San Antonio TX",
+        "headline": "Tornado Warning issued October 31 at 4:15PM CDT expiring October 31 at 4:45PM CDT by NWS Austin/San Antonio TX",
+        "description": "The National Weather Service in Austin San Antonio has issued a\n\n* Tornado Warning for...\nEast central Bastrop County in south central Texas...\nCentral Lee County in south central Texas...\n\n* Until 445 PM CDT\n\n* At 414 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located over Paige, or 9 miles west of Giddings, moving\nnortheast at 30 mph.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed.\nDamage to roofs, windows, and vehicles will occur.  Tree\ndamage is likely.\n\n* Locations impacted include...\nDime Box, Fedor, Paige, Lake Somerville State Park & Trailway,\nHills, Leo, Old Dime Box, Lincoln, Manheim and Loebau.",
+        "instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.",
+        "response": "Shelter",
+        "parameters": {
+          "eventMotionDescription": [
+            "2018-10-31T16:14:00.000-05:00...storm...237DEG...25KT...30.22,-97.09"
+          ],
+          "hailSize": [
+            0.5
+          ],
+          "tornadoDetection": [
+            "RADAR INDICATED"
+          ],
+          "VTEC": [
+            "/O.NEW.KEWX.TO.W.0013.181031T2115Z-181031T2145Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "EWXTOREWX"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM"
+          ],
+          "CMAMtext": [
+            "Tornado Warning in this area til 4:45 PM CDT. Take shelter now. Check local media. -NWS"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T16:45:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194440",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.06,
+              30.2
+            ],
+            [
+              -97.08,
+              30.259999999999998
+            ],
+            [
+              -97.14,
+              30.299999999999997
+            ],
+            [
+              -96.93,
+              30.519999999999996
+            ],
+            [
+              -96.9,
+              30.479999999999997
+            ],
+            [
+              -96.91000000000001,
+              30.479999999999997
+            ],
+            [
+              -96.9,
+              30.459999999999997
+            ],
+            [
+              -96.88000000000001,
+              30.459999999999997
+            ],
+            [
+              -96.87,
+              30.429999999999996
+            ],
+            [
+              -96.85000000000001,
+              30.429999999999996
+            ],
+            [
+              -96.75000000000001,
+              30.329999999999995
+            ],
+            [
+              -97.06,
+              30.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194440",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194440",
+        "areaDesc": "Lee",
+        "geocode": {
+          "UGC": [
+            "TXZ194"
+          ],
+          "SAME": [
+            "048287"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/TXZ194"
+        ],
+        "references": [],
+        "sent": "2018-10-31T16:12:00-05:00",
+        "effective": "2018-10-31T16:12:00-05:00",
+        "onset": "2018-10-31T16:12:00-05:00",
+        "expires": "2018-10-31T17:00:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Observed",
+        "urgency": "Expected",
+        "event": "Special Weather Statement",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Austin/San Antonio TX",
+        "headline": "Special Weather Statement issued October 31 at 4:12PM CDT by NWS Austin/San Antonio TX",
+        "description": "At 411 PM CDT, Doppler radar was tracking a strong thunderstorm near\nPaige, or 9 miles northwest of Giddings, moving northeast at 30 mph.\n\nDime size hail and winds in excess of 40 mph will be possible with\nthis storm.\n\nLocations impacted include...\nLexington, Dime Box, Fedor, Leo, Old Dime Box, Lincoln and Manheim.",
+        "instruction": "This storm may intensify, so be certain to monitor local radio\nstations and available television stations for additional information\nand possible warnings from the National Weather Service.",
+        "response": "Execute",
+        "parameters": {
+          "eventMotionDescription": [
+            "2018-10-31T16:11:00.000-05:00...storm...237DEG...26KT...30.25,-97.07"
+          ],
+          "NWSheadline": [
+            "SIGNIFICANT WEATHER ADVISORY FOR CENTRAL LEE COUNTY UNTIL 500 PM CDT"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "EWXSPSEWX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194438-2809185",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.89,
+              29.96
+            ],
+            [
+              -95.83,
+              29.79
+            ],
+            [
+              -95.81,
+              29.779999999999998
+            ],
+            [
+              -95.79,
+              29.729999999999997
+            ],
+            [
+              -96.08000000000001,
+              29.679999999999996
+            ],
+            [
+              -96.14000000000001,
+              29.749999999999996
+            ],
+            [
+              -95.89,
+              29.96
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194438-2809185",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194438-2809185",
+        "areaDesc": "Fort Bend, TX; Austin, TX; Waller, TX",
+        "geocode": {
+          "UGC": [
+            "TXC157",
+            "TXC015",
+            "TXC473"
+          ],
+          "SAME": [
+            "048157",
+            "048015",
+            "048473"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC157",
+          "https://api.weather.gov/zones/county/TXC015",
+          "https://api.weather.gov/zones/county/TXC473"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194415-2809177",
+            "identifier": "NWS-IDP-PROD-3194415-2809177",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T16:02:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T16:11:00-05:00",
+        "effective": "2018-10-31T16:11:00-05:00",
+        "onset": "2018-10-31T16:11:00-05:00",
+        "expires": "2018-10-31T16:45:00-05:00",
+        "ends": "2018-10-31T16:45:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Tornado Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Tornado Warning issued October 31 at 4:11PM CDT expiring October 31 at 4:45PM CDT by NWS Houston/Galveston TX",
+        "description": "At 410 PM CDT, a severe thunderstorm capable of producing a tornado\nwas located near Simonton, or near Brookshire, moving northeast at\n20 mph. This storm has a history of producing tornadoes confirmed by\nemergency management.\n\nHAZARD...Tornado.\n\nSOURCE...Radar indicated rotation.\n\nIMPACT...Flying debris will be dangerous to those caught without\nshelter. Mobile homes will be damaged or destroyed. Damage\nto roofs, windows, and vehicles will occur.  Tree damage is\nlikely.\n\nThis dangerous storm will be near...\nPattison around 430 PM CDT.\nBrookshire and Fulshear around 435 PM CDT.\nKaty around 445 PM CDT.",
+        "instruction": "TAKE COVER NOW! Move to a basement or an interior room on the lowest\nfloor of a sturdy building. Avoid windows. If you are outdoors, in a\nmobile home, or in a vehicle, move to the closest substantial shelter\nand protect yourself from flying debris.\n\nHeavy rainfall may hide this tornado. Do not wait to see or hear the\ntornado. TAKE COVER NOW!",
+        "response": "Shelter",
+        "parameters": {
+          "eventMotionDescription": [
+            "2018-10-31T16:10:00.000-05:00...storm...243DEG...16KT...29.74,-96.04"
+          ],
+          "hailSize": [
+            0.5
+          ],
+          "tornadoDetection": [
+            "RADAR INDICATED"
+          ],
+          "NWSheadline": [
+            "A TORNADO WARNING REMAINS IN EFFECT UNTIL 445 PM CDT FOR EAST CENTRAL AUSTIN...NORTHWESTERN FORT BEND AND SOUTHEASTERN WALLER COUNTIES"
+          ],
+          "VTEC": [
+            "/O.CON.KHGX.TO.W.0012.000000T0000Z-181031T2145Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "HGXSVSHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T16:45:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194430",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.37,
+              29.58
+            ],
+            [
+              -95.5,
+              29.709999999999997
+            ],
+            [
+              -95.2099999,
+              30.029999999999998
+            ],
+            [
+              -94.95,
+              29.749999999999996
+            ],
+            [
+              -95.37,
+              29.58
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194430",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194430",
+        "areaDesc": "Coastal Harris; Inland Harris; Inland Brazoria",
+        "geocode": {
+          "UGC": [
+            "TXZ313",
+            "TXZ213",
+            "TXZ237"
+          ],
+          "SAME": [
+            "048201",
+            "048039"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/TXZ313",
+          "https://api.weather.gov/zones/forecast/TXZ213",
+          "https://api.weather.gov/zones/forecast/TXZ237"
+        ],
+        "references": [],
+        "sent": "2018-10-31T16:08:00-05:00",
+        "effective": "2018-10-31T16:08:00-05:00",
+        "onset": "2018-10-31T16:08:00-05:00",
+        "expires": "2018-10-31T17:00:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Observed",
+        "urgency": "Expected",
+        "event": "Special Weather Statement",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Special Weather Statement issued October 31 at 4:08PM CDT by NWS Houston/Galveston TX",
+        "description": "At 408 PM CDT, Doppler radar was tracking a strong thunderstorm over\nAstrodome Area, moving northeast at 25 mph.\n\nWinds in excess of 30 mph will be possible with this storm.\n\nLocations impacted include...\nNorthwestern Pasadena, northern Pearland, northwestern Baytown, Deer\nPark, South Houston, Bellaire, Humble, West University Place, Galena\nPark, Jacinto City, Midtown Houston, Cloverleaf, Downtown Houston,\nGreenway / Upper Kirby Area, Second Ward, Greater Heights, Highlands,\nNeartown / Montrose, Greater Eastwood and Near Northside Houston.\n\nA Tornado Watch remains in effect until 1000 PM CDT for southeastern\nTexas.",
+        "instruction": "",
+        "response": "Execute",
+        "parameters": {
+          "eventMotionDescription": [
+            "2018-10-31T16:08:00.000-05:00...storm...237DEG...21KT...29.68,-95.38"
+          ],
+          "NWSheadline": [
+            "SPECIAL WEATHER STATEMENT"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "HGXSPSHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194400-2809174",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.5,
+              31.8
+            ],
+            [
+              -96.72,
+              31.810000000000002
+            ],
+            [
+              -96.8,
+              31.930000000000003
+            ],
+            [
+              -96.14999999999999,
+              32.21
+            ],
+            [
+              -96.17999999999999,
+              32.18
+            ],
+            [
+              -96.16999999999999,
+              32.1599999
+            ],
+            [
+              -96.12999999999998,
+              32.150000000000006
+            ],
+            [
+              -96.11999999999998,
+              32.1599999
+            ],
+            [
+              -96.09999999999998,
+              32.150000000000006
+            ],
+            [
+              -96.11999999999998,
+              32.10000000000001
+            ],
+            [
+              -96.10999999999997,
+              32.080000000000005
+            ],
+            [
+              -96.05999999999997,
+              32.080000000000005
+            ],
+            [
+              -96.06999989999997,
+              32.040000000000006
+            ],
+            [
+              -96.04999999999997,
+              32.010000000000005
+            ],
+            [
+              -96.5,
+              31.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194400-2809174",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194400-2809174",
+        "areaDesc": "Navarro, TX",
+        "geocode": {
+          "UGC": [
+            "TXC349"
+          ],
+          "SAME": [
+            "048349"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC349"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:55:00-05:00",
+        "effective": "2018-10-31T15:55:00-05:00",
+        "onset": "2018-10-31T15:55:00-05:00",
+        "expires": "2018-10-31T18:00:00-05:00",
+        "ends": "2018-10-31T18:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Advisory issued October 31 at 3:55PM CDT expiring October 31 at 6:00PM CDT by NWS Fort Worth TX",
+        "description": "The National Weather Service in Fort Worth has issued a\n\n* Flood Advisory for Minor Flooding in Poor Drainage Areas for...\nSouthern Navarro County in north central Texas...\n\n* Until 600 PM CDT.\n\n* At 354 PM CDT, Doppler radar indicated thunderstorms that were\nproducing heavy rainfall across southern Navarro County. Excessive\nrunoff from these thunderstorms will cause minor flooding. Areas\nthat are low lying or usually experience poor drainage are most\nlikely to experience flooding. Up to two inches of rain have\nalready fallen.\n\n* Some locations that will experience flooding include...\nCorsicana, Kerens, Trinidad, Dawson, Angus, Navarro, Retreat, Oak\nValley, Mildred, Eureka, Richland, Streetman, Goodlow, Powell and\nMustang.",
+        "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KFWD.FA.Y.0178.181031T2055Z-181031T2300Z/"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T18:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194397-2809171",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.47,
+              29.5
+            ],
+            [
+              -95.59,
+              29.51
+            ],
+            [
+              -95.65,
+              29.59
+            ],
+            [
+              -95.44000000000001,
+              29.81
+            ],
+            [
+              -95.33000000000001,
+              29.75
+            ],
+            [
+              -95.47,
+              29.5
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194397-2809171",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194397-2809171",
+        "areaDesc": "Fort Bend, TX; Harris, TX",
+        "geocode": {
+          "UGC": [
+            "TXC157",
+            "TXC201"
+          ],
+          "SAME": [
+            "048157",
+            "048201"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC157",
+          "https://api.weather.gov/zones/county/TXC201"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:50:00-05:00",
+        "effective": "2018-10-31T15:50:00-05:00",
+        "onset": "2018-10-31T15:50:00-05:00",
+        "expires": "2018-10-31T16:45:00-05:00",
+        "ends": "2018-10-31T16:45:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Flood Advisory issued October 31 at 3:50PM CDT expiring October 31 at 4:45PM CDT by NWS Houston/Galveston TX",
+        "description": "The National Weather Service in League City has issued a\n\n* Flood Advisory for Minor Flooding in Poor Drainage Areas for...\nEast central Fort Bend County in southeastern Texas...\nSouth central Harris County in southeastern Texas...\n\n* Until 445 PM CDT.\n\n* At 350 PM CDT, Doppler radar indicated heavy rain due to\nthunderstorms. This will cause minor flooding. Overflowing poor\ndrainage areas will result in minor flooding in the advisory area.\nUp to one inch of rain has already fallen.\n\n* Some locations that will experience flooding include...\nNorthwestern Pearland, southeastern Sugar Land, Missouri City,\nStafford, Bellaire, West University Place, Midtown Houston,\nDowntown Houston, Greenway / Upper Kirby Area, Fresno, Neartown /\nMontrose, Memorial Park, Greater Third Ward, Fourth Ward,\nUniversity Place, First Colony, Astrodome Area, Macgregor, Afton\nOaks / River Oaks Area and Second Ward.",
+        "instruction": "Excessive runoff from heavy rainfall will cause flooding of small\ncreeks and streams, urban areas, highways, streets and underpasses as\nwell as other drainage areas and low lying spots.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KHGX.FA.Y.0157.181031T2050Z-181031T2145Z/"
+          ],
+          "PIL": [
+            "HGXFLSHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T16:45:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194345-2809132",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.93,
+              32.75
+            ],
+            [
+              -96.93,
+              32.81
+            ],
+            [
+              -96.83000000000001,
+              32.830000000000005
+            ],
+            [
+              -96.70999990000001,
+              32.75000000000001
+            ],
+            [
+              -96.76000000000002,
+              32.690000000000005
+            ],
+            [
+              -96.87000000000002,
+              32.78000000000001
+            ],
+            [
+              -96.93,
+              32.75
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194345-2809132",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194345-2809132",
+        "areaDesc": "Dallas, TX",
+        "geocode": {
+          "UGC": [
+            "TXC113"
+          ],
+          "SAME": [
+            "048113"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC113"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194117-2808998",
+            "identifier": "NWS-IDP-PROD-3194117-2808998",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T10:12:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T15:15:00-05:00",
+        "effective": "2018-10-31T15:15:00-05:00",
+        "onset": "2018-10-31T15:15:00-05:00",
+        "expires": "2018-11-01T03:15:00-05:00",
+        "ends": "2018-11-03T11:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 3:15PM CDT expiring November 3 at 11:00AM CDT by NWS Fort Worth TX",
+        "description": "Elm Fork Trinity River Near Carrollton Affecting Dallas County\n\nTrinity River At Dallas Affecting Dallas County\n\n...The Flood Warning continues for the following areas in Texas...\nTrinity River At Trinidad Affecting Henderson and Navarro Counties\n\nTrinity River Near Long Lake (Oakwood) Affecting Anderson...\nFreestone and Leon Counties\nThe Flood Warning continues for\nThe Trinity River At Dallas.\n* At 0200 PM Wednesday the stage was 30.31 feet.\n* Flood stage is 30 feet.\n* Minor flooding is occurring and Minor flooding is forecast.\n* Forecast...The river will continue rising to a crest near  35 feet\nby Thursday morning. The river should fall below flood stage Friday\nnight.\n* At 35 feet, Some low water crossings inundated with cattle and\ngrazing and low water areas under water.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.EXT.KFWD.FL.W.0131.000000T0000Z-181103T1600Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-11-03T11:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194347-2809134",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.8,
+              31.73
+            ],
+            [
+              -95.61999999999999,
+              31.490000000000002
+            ],
+            [
+              -95.8,
+              31.500000000000004
+            ],
+            [
+              -95.92999999999999,
+              31.700000000000003
+            ],
+            [
+              -95.8,
+              31.73
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194347-2809134",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194347-2809134",
+        "areaDesc": "Freestone, TX; Leon, TX; Anderson, TX",
+        "geocode": {
+          "UGC": [
+            "TXC161",
+            "TXC289",
+            "TXC001"
+          ],
+          "SAME": [
+            "048161",
+            "048289",
+            "048001"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC161",
+          "https://api.weather.gov/zones/county/TXC289",
+          "https://api.weather.gov/zones/county/TXC001"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194115-2808996",
+            "identifier": "NWS-IDP-PROD-3194115-2808996",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T10:12:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T15:15:00-05:00",
+        "effective": "2018-10-31T15:15:00-05:00",
+        "onset": "2018-10-31T15:15:00-05:00",
+        "expires": "2018-11-01T03:15:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 3:15PM CDT by NWS Fort Worth TX",
+        "description": "Elm Fork Trinity River Near Carrollton Affecting Dallas County\n\nTrinity River At Dallas Affecting Dallas County\n\n...The Flood Warning continues for the following areas in Texas...\nTrinity River At Trinidad Affecting Henderson and Navarro Counties\n\nTrinity River Near Long Lake (Oakwood) Affecting Anderson...\nFreestone and Leon Counties\nThe Flood Warning continues for\nThe Trinity River Near Long Lake (Oakwood).\n* At 0230 PM Wednesday the stage was 39.42 feet.\n* Flood stage is 35 feet.\n* Minor flooding is occurring and Minor flooding is forecast.\n* Forecast...The river will continue rising to a crest near 40 feet\nby Friday afternoon then begin falling but remain above flood\nstage.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KFWD.FL.W.0089.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194342-2809129",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.88,
+              33
+            ],
+            [
+              -96.86999999999999,
+              32.87
+            ],
+            [
+              -96.99,
+              32.87
+            ],
+            [
+              -97,
+              33
+            ],
+            [
+              -96.88,
+              33
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194342-2809129",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194342-2809129",
+        "areaDesc": "Dallas, TX",
+        "geocode": {
+          "UGC": [
+            "TXC113"
+          ],
+          "SAME": [
+            "048113"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC113"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194116-2808997",
+            "identifier": "NWS-IDP-PROD-3194116-2808997",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T10:12:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T15:15:00-05:00",
+        "effective": "2018-10-31T15:15:00-05:00",
+        "onset": "2018-10-31T15:15:00-05:00",
+        "expires": "2018-11-01T03:15:00-05:00",
+        "ends": "2018-11-01T23:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 3:15PM CDT expiring November 1 at 11:00PM CDT by NWS Fort Worth TX",
+        "description": "Elm Fork Trinity River Near Carrollton Affecting Dallas County\n\nTrinity River At Dallas Affecting Dallas County\n\n...The Flood Warning continues for the following areas in Texas...\nTrinity River At Trinidad Affecting Henderson and Navarro Counties\n\nTrinity River Near Long Lake (Oakwood) Affecting Anderson...\nFreestone and Leon Counties\nThe Flood Warning continues for\nThe Elm Fork Trinity River Near Carrollton.\n* At 0215 PM Wednesday the stage was 7.97 feet.\n* Flood stage is 8 feet.\n* Minor flooding is forecast.\n* Forecast...The river is expected to rise above flood stage by late\nWednesday afternoon and crest near 9 feet by Wednesday night. The\nriver should fall below flood stage by late Thursday morning.\n* At 8 feet, Minor flooding will occur upstream from the gage, near\nthe city golf course.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.EXT.KFWD.FL.W.0130.000000T0000Z-181102T0400Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-11-01T23:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194344-2809131",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.13,
+              32.2299999
+            ],
+            [
+              -96,
+              32.07
+            ],
+            [
+              -96.13,
+              32.06
+            ],
+            [
+              -96.25999999999999,
+              32.190000000000005
+            ],
+            [
+              -96.13,
+              32.2299999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194344-2809131",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194344-2809131",
+        "areaDesc": "Navarro, TX; Henderson, TX",
+        "geocode": {
+          "UGC": [
+            "TXC349",
+            "TXC213"
+          ],
+          "SAME": [
+            "048349",
+            "048213"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC349",
+          "https://api.weather.gov/zones/county/TXC213"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194118-2808999",
+            "identifier": "NWS-IDP-PROD-3194118-2808999",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T10:12:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T15:15:00-05:00",
+        "effective": "2018-10-31T15:15:00-05:00",
+        "onset": "2018-10-31T15:15:00-05:00",
+        "expires": "2018-11-01T03:15:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 3:15PM CDT by NWS Fort Worth TX",
+        "description": "Elm Fork Trinity River Near Carrollton Affecting Dallas County\n\nTrinity River At Dallas Affecting Dallas County\n\n...The Flood Warning continues for the following areas in Texas...\nTrinity River At Trinidad Affecting Henderson and Navarro Counties\n\nTrinity River Near Long Lake (Oakwood) Affecting Anderson...\nFreestone and Leon Counties\nThe Flood Warning continues for\nThe Trinity River At Trinidad.\n* At 0200 PM Wednesday the stage was 39.32 feet.\n* Flood stage is 33 feet.\n* Minor flooding is occurring and Minor flooding is forecast.\n* Forecast...The river will continue to fall to a stage near 38 feet\nby Thursday morning, but remain above flood stage for the next few\ndays.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KFWD.FL.W.0077.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194339-2809126",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194339-2809126",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194339-2809126",
+        "areaDesc": "Fort Bend, TX; Austin, TX; Galveston, TX; Houston, TX; Waller, TX; Polk, TX; Montgomery, TX; Trinity, TX; Washington, TX; Grimes, TX; Brazos, TX; Chambers, TX; Burleson, TX; Madison, TX; Walker, TX; Wharton, TX; Liberty, TX; Harris, TX; San Jacinto, TX; Brazoria, TX; Colorado, TX",
+        "geocode": {
+          "UGC": [
+            "TXC157",
+            "TXC015",
+            "TXC167",
+            "TXC225",
+            "TXC473",
+            "TXC373",
+            "TXC339",
+            "TXC455",
+            "TXC477",
+            "TXC185",
+            "TXC041",
+            "TXC071",
+            "TXC051",
+            "TXC313",
+            "TXC471",
+            "TXC481",
+            "TXC291",
+            "TXC201",
+            "TXC407",
+            "TXC039",
+            "TXC089"
+          ],
+          "SAME": [
+            "048157",
+            "048015",
+            "048167",
+            "048225",
+            "048473",
+            "048373",
+            "048339",
+            "048455",
+            "048477",
+            "048185",
+            "048041",
+            "048071",
+            "048051",
+            "048313",
+            "048471",
+            "048481",
+            "048291",
+            "048201",
+            "048407",
+            "048039",
+            "048089"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC157",
+          "https://api.weather.gov/zones/county/TXC015",
+          "https://api.weather.gov/zones/county/TXC167",
+          "https://api.weather.gov/zones/county/TXC225",
+          "https://api.weather.gov/zones/county/TXC473",
+          "https://api.weather.gov/zones/county/TXC373",
+          "https://api.weather.gov/zones/county/TXC339",
+          "https://api.weather.gov/zones/county/TXC455",
+          "https://api.weather.gov/zones/county/TXC477",
+          "https://api.weather.gov/zones/county/TXC185",
+          "https://api.weather.gov/zones/county/TXC041",
+          "https://api.weather.gov/zones/county/TXC071",
+          "https://api.weather.gov/zones/county/TXC051",
+          "https://api.weather.gov/zones/county/TXC313",
+          "https://api.weather.gov/zones/county/TXC471",
+          "https://api.weather.gov/zones/county/TXC481",
+          "https://api.weather.gov/zones/county/TXC291",
+          "https://api.weather.gov/zones/county/TXC201",
+          "https://api.weather.gov/zones/county/TXC407",
+          "https://api.weather.gov/zones/county/TXC039",
+          "https://api.weather.gov/zones/county/TXC089"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:06:00-05:00",
+        "effective": "2018-10-31T15:06:00-05:00",
+        "onset": "2018-10-31T15:06:00-05:00",
+        "expires": "2018-10-31T22:00:00-05:00",
+        "ends": "2018-10-31T22:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Tornado Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Tornado Watch issued October 31 at 3:06PM CDT expiring October 31 at 10:00PM CDT by NWS Houston/Galveston TX",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED TORNADO WATCH 416 IN\nEFFECT UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS\n\nIN SOUTHEAST TEXAS THIS WATCH INCLUDES 21 COUNTIES\n\nAUSTIN                BRAZORIA              BRAZOS\nBURLESON              CHAMBERS              COLORADO\nFORT BEND             GALVESTON             GRIMES\nHARRIS                HOUSTON               LIBERTY\nMADISON               MONTGOMERY            POLK\nSAN JACINTO           TRINITY               WALKER\nWALLER                WASHINGTON            WHARTON\n\nTHIS INCLUDES THE CITIES OF ALVIN, ANAHUAC, ANGLETON, BELLVILLE,\nBRENHAM, BROOKSHIRE, BRYAN, CALDWELL, CLEVELAND, CLUTE,\nCOLDSPRING, COLLEGE STATION, COLUMBUS, CONROE, CORRIGAN,\nCROCKETT, DAYTON, DICKINSON, EAGLE LAKE, EL CAMPO, FIRST COLONY,\nFREEPORT, FRIENDSWOOD, GALVESTON, GROVETON, HEMPSTEAD, HOUSTON,\nHUNTSVILLE, LAKE JACKSON, LEAGUE CITY, LIBERTY, LIVINGSTON,\nMADISONVILLE, MISSION BEND, MISSOURI CITY, MONT BELVIEU,\nNAVASOTA, OLD RIVER-WINFREE, PEARLAND, PECAN GROVE, PRAIRIE VIEW,\nROSENBERG, SEALY, SHEPHERD, SOMERVILLE, STOWELL, SUGAR LAND,\nTEXAS CITY, THE WOODLANDS, TRINITY, WALLER, WEIMAR, WHARTON,\nAND WINNIE.",
+        "instruction": "",
+        "response": "Monitor",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KHGX.TO.A.0416.181031T2006Z-181101T0300Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "HGXWCNHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T22:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194333-2809124",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194333-2809124",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194333-2809124",
+        "areaDesc": "Orange, TX; Tyler, TX; Jefferson, TX; Jasper, TX; Newton, TX; Hardin, TX",
+        "geocode": {
+          "UGC": [
+            "TXC361",
+            "TXC457",
+            "TXC245",
+            "TXC241",
+            "TXC351",
+            "TXC199"
+          ],
+          "SAME": [
+            "048361",
+            "048457",
+            "048245",
+            "048241",
+            "048351",
+            "048199"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC361",
+          "https://api.weather.gov/zones/county/TXC457",
+          "https://api.weather.gov/zones/county/TXC245",
+          "https://api.weather.gov/zones/county/TXC241",
+          "https://api.weather.gov/zones/county/TXC351",
+          "https://api.weather.gov/zones/county/TXC199"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:04:00-05:00",
+        "effective": "2018-10-31T15:04:00-05:00",
+        "onset": "2018-10-31T15:04:00-05:00",
+        "expires": "2018-10-31T22:00:00-05:00",
+        "ends": "2018-10-31T22:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Tornado Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Lake Charles LA",
+        "headline": "Tornado Watch issued October 31 at 3:04PM CDT expiring October 31 at 10:00PM CDT by NWS Lake Charles LA",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED TORNADO WATCH 416 IN\nEFFECT UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS\n\nIN TEXAS THIS WATCH INCLUDES 6 COUNTIES\n\nIN SOUTHEAST TEXAS\n\nHARDIN                JASPER                JEFFERSON\nNEWTON                ORANGE                TYLER\n\nTHIS INCLUDES THE CITIES OF BEAUMONT, BLEAKWOOD, BRIDGE CITY,\nBUNA, BURKEVILLE, CALL, FARRSVILLE, FRED, GIST, HILLISTER,\nHOLLY SPRINGS, IVANHOE, JAMESTOWN, JASPER, KIRBYVILLE, LUMBERTON,\nMAGNOLIA SPRINGS, MT. UNION, NEWTON, ORANGE, SABINE PASS,\nSEA RIM STATE PARK, SILSBEE, SPURGER, TOWN BLUFF, VIDOR, WARREN,\nWIERGATE, AND WOODVILLE.",
+        "instruction": "",
+        "response": "Monitor",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KLCH.TO.A.0416.181031T2004Z-181101T0300Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "LCHWCNLCH"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T22:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194331-2809122",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194331-2809122",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194331-2809122",
+        "areaDesc": "Harrison, TX; Wood, TX; Bossier, LA; Morris, TX; Panola, TX; Red River, TX; Columbia, AR; Caddo, LA; Little River, AR; Smith, TX; Hempstead, AR; Rusk, TX; Miller, AR; Bowie, TX; Camp, TX; Sabine, TX; Marion, TX; Angelina, TX; Nacogdoches, TX; Franklin, TX; Lafayette, AR; Titus, TX; Nevada, AR; Sabine, LA; Upshur, TX; San Augustine, TX; Cass, TX; Cherokee, TX; McCurtain, OK; Sevier, AR; De Soto, LA; Shelby, TX; Webster, LA; Howard, AR; Gregg, TX",
+        "geocode": {
+          "UGC": [
+            "TXC203",
+            "TXC499",
+            "LAC015",
+            "TXC343",
+            "TXC365",
+            "TXC387",
+            "ARC027",
+            "LAC017",
+            "ARC081",
+            "TXC423",
+            "ARC057",
+            "TXC401",
+            "ARC091",
+            "TXC037",
+            "TXC063",
+            "TXC403",
+            "TXC315",
+            "TXC005",
+            "TXC347",
+            "TXC159",
+            "ARC073",
+            "TXC449",
+            "ARC099",
+            "LAC085",
+            "TXC459",
+            "TXC405",
+            "TXC067",
+            "TXC073",
+            "OKC089",
+            "ARC133",
+            "LAC031",
+            "TXC419",
+            "LAC119",
+            "ARC061",
+            "TXC183"
+          ],
+          "SAME": [
+            "048203",
+            "048499",
+            "022015",
+            "048343",
+            "048365",
+            "048387",
+            "005027",
+            "022017",
+            "005081",
+            "048423",
+            "005057",
+            "048401",
+            "005091",
+            "048037",
+            "048063",
+            "048403",
+            "048315",
+            "048005",
+            "048347",
+            "048159",
+            "005073",
+            "048449",
+            "005099",
+            "022085",
+            "048459",
+            "048405",
+            "048067",
+            "048073",
+            "040089",
+            "005133",
+            "022031",
+            "048419",
+            "022119",
+            "005061",
+            "048183"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC203",
+          "https://api.weather.gov/zones/county/TXC499",
+          "https://api.weather.gov/zones/county/LAC015",
+          "https://api.weather.gov/zones/county/TXC343",
+          "https://api.weather.gov/zones/county/TXC365",
+          "https://api.weather.gov/zones/county/TXC387",
+          "https://api.weather.gov/zones/county/ARC027",
+          "https://api.weather.gov/zones/county/LAC017",
+          "https://api.weather.gov/zones/county/ARC081",
+          "https://api.weather.gov/zones/county/TXC423",
+          "https://api.weather.gov/zones/county/ARC057",
+          "https://api.weather.gov/zones/county/TXC401",
+          "https://api.weather.gov/zones/county/ARC091",
+          "https://api.weather.gov/zones/county/TXC037",
+          "https://api.weather.gov/zones/county/TXC063",
+          "https://api.weather.gov/zones/county/TXC403",
+          "https://api.weather.gov/zones/county/TXC315",
+          "https://api.weather.gov/zones/county/TXC005",
+          "https://api.weather.gov/zones/county/TXC347",
+          "https://api.weather.gov/zones/county/TXC159",
+          "https://api.weather.gov/zones/county/ARC073",
+          "https://api.weather.gov/zones/county/TXC449",
+          "https://api.weather.gov/zones/county/ARC099",
+          "https://api.weather.gov/zones/county/LAC085",
+          "https://api.weather.gov/zones/county/TXC459",
+          "https://api.weather.gov/zones/county/TXC405",
+          "https://api.weather.gov/zones/county/TXC067",
+          "https://api.weather.gov/zones/county/TXC073",
+          "https://api.weather.gov/zones/county/OKC089",
+          "https://api.weather.gov/zones/county/ARC133",
+          "https://api.weather.gov/zones/county/LAC031",
+          "https://api.weather.gov/zones/county/TXC419",
+          "https://api.weather.gov/zones/county/LAC119",
+          "https://api.weather.gov/zones/county/ARC061",
+          "https://api.weather.gov/zones/county/TXC183"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:03:00-05:00",
+        "effective": "2018-10-31T15:03:00-05:00",
+        "onset": "2018-10-31T15:03:00-05:00",
+        "expires": "2018-10-31T22:00:00-05:00",
+        "ends": "2018-10-31T22:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Tornado Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Tornado Watch issued October 31 at 3:03PM CDT expiring October 31 at 10:00PM CDT by NWS Shreveport LA",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED TORNADO WATCH 416 IN\nEFFECT UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS\n\nIN ARKANSAS THIS WATCH INCLUDES 8 COUNTIES\n\nIN SOUTHWEST ARKANSAS\n\nCOLUMBIA              HEMPSTEAD             HOWARD\nLAFAYETTE             LITTLE RIVER          MILLER\nNEVADA                SEVIER\n\nIN LOUISIANA THIS WATCH INCLUDES 5 PARISHES\n\nIN NORTHWEST LOUISIANA\n\nBOSSIER               CADDO                 DE SOTO\nSABINE                WEBSTER\n\nIN OKLAHOMA THIS WATCH INCLUDES 1 COUNTY\n\nIN SOUTHEAST OKLAHOMA\n\nMCCURTAIN\n\nIN TEXAS THIS WATCH INCLUDES 21 COUNTIES\n\nIN NORTHEAST TEXAS\n\nANGELINA              BOWIE                 CAMP\nCASS                  CHEROKEE              FRANKLIN\nGREGG                 HARRISON              MARION\nMORRIS                NACOGDOCHES           PANOLA\nRED RIVER             RUSK                  SABINE\nSAN AUGUSTINE         SHELBY                SMITH\nTITUS                 UPSHUR                WOOD\n\nTHIS INCLUDES THE CITIES OF ASHDOWN, ATLANTA, BIG SANDY, BOGATA,\nBOSSIER CITY, BRADLEY, BROKEN BOW, CARTHAGE, CENTER, CLARKSVILLE,\nDAINGERFIELD, DE QUEEN, DIERKS, GILMER, HAWKINS, HEMPHILL,\nHENDERSON, HOPE, HUGHES SPRINGS, IDABEL, JACKSONVILLE, JEFFERSON,\nLEWISVILLE, LINDEN, LOGANSPORT, LONE STAR, LONGVIEW, LUFKIN,\nMAGNOLIA, MANSFIELD, MANY, MARSHALL, MINDEN, MINEOLA,\nMINERAL SPRINGS, MOUNT PLEASANT, MOUNT VERNON, NACOGDOCHES,\nNAPLES, NASHVILLE, OMAHA, PINELAND, PITTSBURG, PLEASANT HILL,\nPRESCOTT, QUEEN CITY, QUITMAN, RUSK, SAN AUGUSTINE, SHREVEPORT,\nSPRINGHILL, STAMPS, STONEWALL, TEXARKANA, TEXARKANA, TYLER,\nWINNSBORO, AND ZWOLLE.",
+        "instruction": "",
+        "response": "Monitor",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KSHV.TO.A.0416.181031T2003Z-181101T0300Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVWCNSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T22:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194332-2809123",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194332-2809123",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194332-2809123",
+        "areaDesc": "Caldwell, TX; Bastrop, TX; Fayette, TX; Lavaca, TX; Lee, TX; Gonzales, TX",
+        "geocode": {
+          "UGC": [
+            "TXC055",
+            "TXC021",
+            "TXC149",
+            "TXC285",
+            "TXC287",
+            "TXC177"
+          ],
+          "SAME": [
+            "048055",
+            "048021",
+            "048149",
+            "048285",
+            "048287",
+            "048177"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC055",
+          "https://api.weather.gov/zones/county/TXC021",
+          "https://api.weather.gov/zones/county/TXC149",
+          "https://api.weather.gov/zones/county/TXC285",
+          "https://api.weather.gov/zones/county/TXC287",
+          "https://api.weather.gov/zones/county/TXC177"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:03:00-05:00",
+        "effective": "2018-10-31T15:03:00-05:00",
+        "onset": "2018-10-31T15:03:00-05:00",
+        "expires": "2018-10-31T22:00:00-05:00",
+        "ends": "2018-10-31T22:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Tornado Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Austin/San Antonio TX",
+        "headline": "Tornado Watch issued October 31 at 3:03PM CDT expiring October 31 at 10:00PM CDT by NWS Austin/San Antonio TX",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED TORNADO WATCH 416 IN\nEFFECT UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS\n\nIN TEXAS THIS WATCH INCLUDES 6 COUNTIES\n\nIN SOUTH CENTRAL TEXAS\n\nBASTROP               CALDWELL              FAYETTE\nGONZALES              LAVACA                LEE\n\nTHIS INCLUDES THE CITIES OF BASTROP, GIDDINGS, GONZALES,\nHALLETSVILLE, LA GRANGE, AND LOCKHART.",
+        "instruction": "",
+        "response": "Monitor",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KEWX.TO.A.0416.181031T2003Z-181101T0300Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "EWXWCNEWX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T22:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194328-2809121",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194328-2809121",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194328-2809121",
+        "areaDesc": "Freestone, TX; Falls, TX; Leon, TX; Milam, TX; Van Zandt, TX; Robertson, TX; Anderson, TX; Limestone, TX; Henderson, TX",
+        "geocode": {
+          "UGC": [
+            "TXC161",
+            "TXC145",
+            "TXC289",
+            "TXC331",
+            "TXC467",
+            "TXC395",
+            "TXC001",
+            "TXC293",
+            "TXC213"
+          ],
+          "SAME": [
+            "048161",
+            "048145",
+            "048289",
+            "048331",
+            "048467",
+            "048395",
+            "048001",
+            "048293",
+            "048213"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC161",
+          "https://api.weather.gov/zones/county/TXC145",
+          "https://api.weather.gov/zones/county/TXC289",
+          "https://api.weather.gov/zones/county/TXC331",
+          "https://api.weather.gov/zones/county/TXC467",
+          "https://api.weather.gov/zones/county/TXC395",
+          "https://api.weather.gov/zones/county/TXC001",
+          "https://api.weather.gov/zones/county/TXC293",
+          "https://api.weather.gov/zones/county/TXC213"
+        ],
+        "references": [],
+        "sent": "2018-10-31T15:02:00-05:00",
+        "effective": "2018-10-31T15:02:00-05:00",
+        "onset": "2018-10-31T15:02:00-05:00",
+        "expires": "2018-10-31T22:00:00-05:00",
+        "ends": "2018-10-31T22:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Tornado Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Tornado Watch issued October 31 at 3:02PM CDT expiring October 31 at 10:00PM CDT by NWS Fort Worth TX",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED TORNADO WATCH 416 IN\nEFFECT UNTIL 10 PM CDT THIS EVENING FOR THE FOLLOWING AREAS\n\nIN TEXAS THIS WATCH INCLUDES 9 COUNTIES\n\nIN CENTRAL TEXAS\n\nANDERSON              FALLS                 FREESTONE\nHENDERSON             LEON                  LIMESTONE\nMILAM                 ROBERTSON\n\nIN NORTH CENTRAL TEXAS\n\nVAN ZANDT\n\nTHIS INCLUDES THE CITIES OF ATHENS, BUFFALO, CALVERT, CAMERON,\nCANTON, CENTERVILLE, EDGEWOOD, FAIRFIELD, FRANKLIN, GRAND SALINE,\nGROESBECK, GUN BARREL CITY, HEARNE, JEWETT, MARLIN, MEXIA,\nNORMANGEE, OAKWOOD, PALESTINE, ROCKDALE, TEAGUE, VAN,\nWILLS POINT, AND WORTHAM.",
+        "instruction": "",
+        "response": "Monitor",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KFWD.TO.A.0416.181031T2002Z-181101T0300Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDWCNFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T22:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194316-2809117",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.04,
+              28.69
+            ],
+            [
+              -96.98,
+              28.69
+            ],
+            [
+              -96.95,
+              28.67
+            ],
+            [
+              -96.88000000000001,
+              28.57
+            ],
+            [
+              -96.80000000000001,
+              28.45
+            ],
+            [
+              -96.85000000000001,
+              28.43
+            ],
+            [
+              -97.04,
+              28.69
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194316-2809117",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194316-2809117",
+        "areaDesc": "Refugio, TX; Victoria, TX; Calhoun, TX",
+        "geocode": {
+          "UGC": [
+            "TXC391",
+            "TXC469",
+            "TXC057"
+          ],
+          "SAME": [
+            "048391",
+            "048469",
+            "048057"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC391",
+          "https://api.weather.gov/zones/county/TXC469",
+          "https://api.weather.gov/zones/county/TXC057"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194004-2808952",
+            "identifier": "NWS-IDP-PROD-3194004-2808952",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:55:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:52:00-05:00",
+        "effective": "2018-10-31T14:52:00-05:00",
+        "onset": "2018-10-31T14:52:00-05:00",
+        "expires": "2018-11-01T08:51:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Flood Warning issued October 31 at 2:52PM CDT by NWS Corpus Christi TX",
+        "description": "Guadalupe River Near Bloomington affecting Calhoun...Refugio and\nVictoria Counties\n\n.Recent or anticipated rainfall over the area will keep the\naforementioned river above flood stage for the next few days.\nThese river forecasts are based on forecast rainfall over the\narea, and are subject to change with rainfall forecasts.\nThe Flood Warning continues for the Guadalupe River Near Bloomington.\n* until further notice...or until the warning is cancelled.\n* At  2:00 PM Wednesday the stage was 22.0 feet.\n* Minor flooding is occurring and Minor flooding is forecast.\n* Flood stage is 20.0 feet.\n* Forecast: The river will continue to slowly fall to a stage of 21.8 feet\nby tomorrow morning, but will remain above flood stage through the\nweekend.\n* At 20.0 feet Minor lowland flooding occurs, with the flow reaching\nthe right flood plain near the Invista Plant near Bloomington.\nDownstream above Highway 35, the flow escapes into the left flood\nplain cutting off the lowest homes.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nStay tuned to NOAA Weather Radio, local TV and radio\nstations, or cable TV outlets, for the latest weather\ninformation, as additional rainfall could affect crest\nforecasts.\n\nFor the latest river stages and forecasts visit our AHPS page at:\nhttps://water.weather.gov/ahps2/index.php?wfo=crp",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KCRP.FL.W.0031.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "CRPFLSCRP"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194311-2809112",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.94,
+              28.1
+            ],
+            [
+              -97.86,
+              28.150000000000002
+            ],
+            [
+              -97.75,
+              28.020000000000003
+            ],
+            [
+              -97.87,
+              27.990000000000002
+            ],
+            [
+              -97.94,
+              28.1
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194311-2809112",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194311-2809112",
+        "areaDesc": "Jim Wells, TX; Nueces, TX; San Patricio, TX; Live Oak, TX",
+        "geocode": {
+          "UGC": [
+            "TXC249",
+            "TXC355",
+            "TXC409",
+            "TXC297"
+          ],
+          "SAME": [
+            "048249",
+            "048355",
+            "048409",
+            "048297"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC249",
+          "https://api.weather.gov/zones/county/TXC355",
+          "https://api.weather.gov/zones/county/TXC409",
+          "https://api.weather.gov/zones/county/TXC297"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193997-2808945",
+            "identifier": "NWS-IDP-PROD-3193997-2808945",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:45:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:50:00-05:00",
+        "effective": "2018-10-31T14:50:00-05:00",
+        "onset": "2018-10-31T14:50:00-05:00",
+        "expires": "2018-11-01T08:49:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Flood Warning issued October 31 at 2:50PM CDT by NWS Corpus Christi TX",
+        "description": "Nueces River Near Tilden affecting McMullen County\nNueces River Near Three Rivers affecting Live Oak County\nNueces River At Mathis affecting Jim Wells...Live Oak...Nueces and\nSan Patricio Counties\nNueces River Near Bluntzer affecting Jim Wells...Nueces and San\nPatricio Counties\nNueces River At Calallen affecting Nueces and San Patricio Counties\n\n.Recent rainfall upstream and over the area will keep the\naforementioned rivers above flood stage for the next several days.\nThese river forecasts are based on forecast rainfall and reservoir\nreleases upstream and over the area, and are subject to change with\nupdated rainfall forecasts and changes in reservoir releases.\nThe Flood Warning continues for the Nueces River At Mathis.\n* until further notice...or until the warning is cancelled.\n* At  2:00 PM Wednesday the stage was 27.8 feet.\n* Moderate flooding is occurring and Moderate flooding is forecast.\n* Flood stage is 25.0 feet.\n* Forecast: The river will remain near 27.7 feet over the next several\ndays as releases from Lake Corpus Christi continue.\n* At 28.0 feet Major lowland flooding occurs, causing widespread\nevacuations downstream above Calallen. The west bank residents below\nBluntzer may be cut off for 4 to 6 weeks.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nStay tuned to NOAA Weather Radio, local TV and radio\nstations, or cable TV outlets, for the latest weather\ninformation, as additional rainfall could affect crest\nforecasts.\n\nFor the latest river stages and forecasts visit our AHPS page at:\nhttps://water.weather.gov/ahps2/index.php?wfo=crp",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KCRP.FL.W.0040.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "CRPFLSCRP"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194314-2809115",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.76,
+              27.87
+            ],
+            [
+              -97.68,
+              27.94
+            ],
+            [
+              -97.56,
+              27.87
+            ],
+            [
+              -97.5,
+              27.84
+            ],
+            [
+              -97.55,
+              27.81
+            ],
+            [
+              -97.76,
+              27.87
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194314-2809115",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194314-2809115",
+        "areaDesc": "Nueces, TX; San Patricio, TX",
+        "geocode": {
+          "UGC": [
+            "TXC355",
+            "TXC409"
+          ],
+          "SAME": [
+            "048355",
+            "048409"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC355",
+          "https://api.weather.gov/zones/county/TXC409"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193998-2808946",
+            "identifier": "NWS-IDP-PROD-3193998-2808946",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:45:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:50:00-05:00",
+        "effective": "2018-10-31T14:50:00-05:00",
+        "onset": "2018-10-31T14:50:00-05:00",
+        "expires": "2018-11-01T08:49:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Flood Warning issued October 31 at 2:50PM CDT by NWS Corpus Christi TX",
+        "description": "Nueces River Near Tilden affecting McMullen County\nNueces River Near Three Rivers affecting Live Oak County\nNueces River At Mathis affecting Jim Wells...Live Oak...Nueces and\nSan Patricio Counties\nNueces River Near Bluntzer affecting Jim Wells...Nueces and San\nPatricio Counties\nNueces River At Calallen affecting Nueces and San Patricio Counties\n\n.Recent rainfall upstream and over the area will keep the\naforementioned rivers above flood stage for the next several days.\nThese river forecasts are based on forecast rainfall and reservoir\nreleases upstream and over the area, and are subject to change with\nupdated rainfall forecasts and changes in reservoir releases.\nThe Flood Warning continues for the Nueces River At Calallen.\n* until further notice...or until the warning is cancelled.\n* At  1:30 PM Wednesday the stage was 7.4 feet.\n* Minor flooding is occurring and Moderate flooding is forecast.\n* Flood stage is 7.0 feet.\n* Forecast: The river will continue rising to near 8.2 feet by early\nSunday morning and then hold steady as releases from Lake Corpus Christi\ncontinue. Additional rises may be possible thereafter.\n* At 8.2 feet Roads flood in residential areas, cutting off homes\nnear Calallen, and requiring evacuations. This includes the\nsubdivisions of County Road 73 in Riverside Addition 1 and 2,\nRiverside Annex, Twin Lakes, Riverside Acres and homes in the Nueces\nRiver Estates and Lindgreen Estates. Hazel Bazemore Park and Labonte\nPark will also flood, with a good part of the park under water. Roads\nnear the park and river are closed, and the soccer field is\ninundated.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nStay tuned to NOAA Weather Radio, local TV and radio\nstations, or cable TV outlets, for the latest weather\ninformation, as additional rainfall could affect crest\nforecasts.\n\nFor the latest river stages and forecasts visit our AHPS page at:\nhttps://water.weather.gov/ahps2/index.php?wfo=crp",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KCRP.FL.W.0039.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "CRPFLSCRP"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194312-2809113",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.33,
+              28.43
+            ],
+            [
+              -98.08,
+              28.5
+            ],
+            [
+              -97.86,
+              28.15
+            ],
+            [
+              -97.94,
+              28.099999999999998
+            ],
+            [
+              -98.14999999999999,
+              28.36
+            ],
+            [
+              -98.33,
+              28.33
+            ],
+            [
+              -98.33,
+              28.43
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194312-2809113",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194312-2809113",
+        "areaDesc": "Live Oak, TX",
+        "geocode": {
+          "UGC": [
+            "TXC297"
+          ],
+          "SAME": [
+            "048297"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC297"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193982-2808930",
+            "identifier": "NWS-IDP-PROD-3193982-2808930",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:28:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:50:00-05:00",
+        "effective": "2018-10-31T14:50:00-05:00",
+        "onset": "2018-10-31T14:50:00-05:00",
+        "expires": "2018-11-01T08:49:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Flood Warning issued October 31 at 2:50PM CDT by NWS Corpus Christi TX",
+        "description": "Nueces River Near Tilden affecting McMullen County\nNueces River Near Three Rivers affecting Live Oak County\nNueces River At Mathis affecting Jim Wells...Live Oak...Nueces and\nSan Patricio Counties\nNueces River Near Bluntzer affecting Jim Wells...Nueces and San\nPatricio Counties\nNueces River At Calallen affecting Nueces and San Patricio Counties\n\n.Recent rainfall upstream and over the area will keep the\naforementioned rivers above flood stage for the next several days.\nThese river forecasts are based on forecast rainfall and reservoir\nreleases upstream and over the area, and are subject to change with\nupdated rainfall forecasts and changes in reservoir releases.\nThe Flood Warning continues for the Nueces River Near Three Rivers.\n* until further notice...or until the warning is cancelled.\n* At  2:15 PM Wednesday the stage was 35.2 feet.\n* Major flooding is occurring and Major flooding is forecast.\n* Flood stage is 25.0 feet.\n* Forecast: The river will continue rising to near 35.2 feet this\nevening then begin falling, but will remain above flood levels\nthrough the weekend.\n* At 35.0 feet Major lowland flooding occurs. Flow backs up minor\ncreeks to the slabs of lowest homes in the River Creek Acres\nSubdivision, five miles southeast of George West, requiring\nevacuations. Livestock are cut off and could drown in low areas.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nStay tuned to NOAA Weather Radio, local TV and radio\nstations, or cable TV outlets, for the latest weather\ninformation, as additional rainfall could affect crest\nforecasts.\n\nFor the latest river stages and forecasts visit our AHPS page at:\nhttps://water.weather.gov/ahps2/index.php?wfo=crp",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KCRP.FL.W.0037.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "CRPFLSCRP"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194315-2809116",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.87,
+              27.99
+            ],
+            [
+              -97.75,
+              28.02
+            ],
+            [
+              -97.75,
+              27.97
+            ],
+            [
+              -97.68,
+              27.939999999999998
+            ],
+            [
+              -97.76,
+              27.869999999999997
+            ],
+            [
+              -97.83,
+              27.919999999999998
+            ],
+            [
+              -97.87,
+              27.99
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194315-2809116",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194315-2809116",
+        "areaDesc": "Jim Wells, TX; Nueces, TX; San Patricio, TX",
+        "geocode": {
+          "UGC": [
+            "TXC249",
+            "TXC355",
+            "TXC409"
+          ],
+          "SAME": [
+            "048249",
+            "048355",
+            "048409"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC249",
+          "https://api.weather.gov/zones/county/TXC355",
+          "https://api.weather.gov/zones/county/TXC409"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193999-2808947",
+            "identifier": "NWS-IDP-PROD-3193999-2808947",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:45:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:50:00-05:00",
+        "effective": "2018-10-31T14:50:00-05:00",
+        "onset": "2018-10-31T14:50:00-05:00",
+        "expires": "2018-11-01T08:49:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Flood Warning issued October 31 at 2:50PM CDT by NWS Corpus Christi TX",
+        "description": "Nueces River Near Tilden affecting McMullen County\nNueces River Near Three Rivers affecting Live Oak County\nNueces River At Mathis affecting Jim Wells...Live Oak...Nueces and\nSan Patricio Counties\nNueces River Near Bluntzer affecting Jim Wells...Nueces and San\nPatricio Counties\nNueces River At Calallen affecting Nueces and San Patricio Counties\n\n.Recent rainfall upstream and over the area will keep the\naforementioned rivers above flood stage for the next several days.\nThese river forecasts are based on forecast rainfall and reservoir\nreleases upstream and over the area, and are subject to change with\nupdated rainfall forecasts and changes in reservoir releases.\nThe Flood Warning continues for the Nueces River Near Bluntzer.\n* until further notice...or until the warning is cancelled.\n* At  2:00 PM Wednesday the stage was 27.0 feet.\n* Major flooding is occurring and Major flooding is forecast.\n* Flood stage is 18.0 feet.\n* Forecast: The river will continue rising to near 28.7 feet by\nearly Sunday morning and then hold steady as releases from Lake\nCorpus Christi continue. Additional rises may be possible thereafter.\n* At 27.0 feet Major lowland flooding occurs from near Blutzer to\nCalallen. Widespread residential flooding occurs for days or weeks.\nThis includes homes in the following subdivisions, Sandy Hallow, Los\nDos Palomas, Los Escondido, and along Oak Lane in Rio Encinos. Many\nsecondary roads, primary roads, and low bridges are flooded, with\nwater possibly a foot or more deep. The flow is out of the channel\nand into prevailing left flood plain.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nStay tuned to NOAA Weather Radio, local TV and radio\nstations, or cable TV outlets, for the latest weather\ninformation, as additional rainfall could affect crest\nforecasts.\n\nFor the latest river stages and forecasts visit our AHPS page at:\nhttps://water.weather.gov/ahps2/index.php?wfo=crp",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KCRP.FL.W.0028.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "CRPFLSCRP"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194313-2809114",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.8,
+              28.17
+            ],
+            [
+              -98.59,
+              28.360000000000003
+            ],
+            [
+              -98.33,
+              28.450000000000003
+            ],
+            [
+              -98.33,
+              28.330000000000002
+            ],
+            [
+              -98.53999999999999,
+              28.26
+            ],
+            [
+              -98.8,
+              28.07
+            ],
+            [
+              -98.8,
+              28.17
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194313-2809114",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194313-2809114",
+        "areaDesc": "McMullen, TX",
+        "geocode": {
+          "UGC": [
+            "TXC311"
+          ],
+          "SAME": [
+            "048311"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC311"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193996-2808944",
+            "identifier": "NWS-IDP-PROD-3193996-2808944",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:45:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:50:00-05:00",
+        "effective": "2018-10-31T14:50:00-05:00",
+        "onset": "2018-10-31T14:50:00-05:00",
+        "expires": "2018-11-01T08:49:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Flood Warning issued October 31 at 2:50PM CDT by NWS Corpus Christi TX",
+        "description": "Nueces River Near Tilden affecting McMullen County\nNueces River Near Three Rivers affecting Live Oak County\nNueces River At Mathis affecting Jim Wells...Live Oak...Nueces and\nSan Patricio Counties\nNueces River Near Bluntzer affecting Jim Wells...Nueces and San\nPatricio Counties\nNueces River At Calallen affecting Nueces and San Patricio Counties\n\n.Recent rainfall upstream and over the area will keep the\naforementioned rivers above flood stage for the next several days.\nThese river forecasts are based on forecast rainfall and reservoir\nreleases upstream and over the area, and are subject to change with\nupdated rainfall forecasts and changes in reservoir releases.\nThe Flood Warning continues for the Nueces River Near Tilden.\n* until further notice...or until the warning is cancelled.\n* At  1:30 PM Wednesday the stage was 19.5 feet.\n* Major flooding is occurring and Major flooding is forecast.\n* Flood stage is 14.0 feet.\n* Forecast: The river will continue to fall to below major flood\nstage by Friday morning, but will remain above moderate flood stage\nthrough the weekend.\n* At 20.0 feet Major flooding below Cotulla to below Tilden occurs,\nand cuts off extensive portions of the flood plain, requiring\nwholesale evacuation of livestock from the area. Roads and bridges\nnear the river flood severely. Hunting cabins, pump jacks, tank\nbatteries, irrigation pumps and any equipment in low areas near the\nriver flood.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nStay tuned to NOAA Weather Radio, local TV and radio\nstations, or cable TV outlets, for the latest weather\ninformation, as additional rainfall could affect crest\nforecasts.\n\nFor the latest river stages and forecasts visit our AHPS page at:\nhttps://water.weather.gov/ahps2/index.php?wfo=crp",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KCRP.FL.W.0033.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "CRPFLSCRP"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194257-2809093",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.92,
+              30.92
+            ],
+            [
+              -99.09,
+              30.930000000000003
+            ],
+            [
+              -99.09,
+              31.250000000000004
+            ],
+            [
+              -98.5699999,
+              31.250000000000004
+            ],
+            [
+              -98.5699999,
+              31.200000000000003
+            ],
+            [
+              -98.5,
+              31.160000000000004
+            ],
+            [
+              -98.55,
+              31.120000000000005
+            ],
+            [
+              -98.53,
+              31.090000000000003
+            ],
+            [
+              -98.49,
+              31.120000000000005
+            ],
+            [
+              -98.4599999,
+              31.110000000000003
+            ],
+            [
+              -98.4599999,
+              31.080000000000002
+            ],
+            [
+              -98.49,
+              31.060000000000002
+            ],
+            [
+              -98.44,
+              31.03
+            ],
+            [
+              -98.4599999,
+              31.01
+            ],
+            [
+              -98.44,
+              30.990000000000002
+            ],
+            [
+              -98.45,
+              30.96
+            ],
+            [
+              -98.41,
+              30.93
+            ],
+            [
+              -98.92,
+              30.92
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194257-2809093",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194257-2809093",
+        "areaDesc": "San Saba, TX",
+        "geocode": {
+          "UGC": [
+            "TXC411"
+          ],
+          "SAME": [
+            "048411"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC411"
+        ],
+        "references": [],
+        "sent": "2018-10-31T14:28:00-05:00",
+        "effective": "2018-10-31T14:28:00-05:00",
+        "onset": "2018-10-31T14:28:00-05:00",
+        "expires": "2018-10-31T16:30:00-05:00",
+        "ends": "2018-10-31T16:30:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS San Angelo TX",
+        "headline": "Flood Advisory issued October 31 at 2:28PM CDT expiring October 31 at 4:30PM CDT by NWS San Angelo TX",
+        "description": "The National Weather Service in San Angelo has issued a\n\n* Flood Advisory for...\nSan Saba County in west central Texas...\n\n* Until 430 PM CDT.\n\n* At 223 PM CDT, showers and thunderstorms with heavy rainfall from\n8 miles west of Cherokee to San Saba will move east at 35 mph.\nQuick heavy rainfall amounts around 1/2 inch on saturated grounds\nwill cause minor flooding in the advisory area.\n\n* Some locations that will experience flooding include...\nSan Saba, Algerita, Cherokee, Bend, Chappel, Sloan, Harkeyville,\nUs-190 Near The Mcculloch-San Saba County Line and Us-\n190 Near The San Saba-Lampasas County Line.\n\nThis includes the following low water crossings ...\nFM 1030 crossing Wallace Creek...\nCR 340 crossing San Saba River...\nCR 208 crossing San Saba River...\ncrossings along County Road 238...\nCounty Road 343 crossing Cherokee Creek...\n\nDo not drive through these low water crossings or any other\nlow water crossing with water flowing across the roadway.",
+        "instruction": "",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KSJT.FA.Y.0185.181031T1928Z-181031T2130Z/"
+          ],
+          "PIL": [
+            "SJTFLSSJT"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T16:30:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194246-2809082",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.3,
+              31.62
+            ],
+            [
+              -106.33,
+              31.66
+            ],
+            [
+              -106.35,
+              31.69
+            ],
+            [
+              -106.36999999999999,
+              31.71
+            ],
+            [
+              -106.38,
+              31.73
+            ],
+            [
+              -106.39,
+              31.740000000000002
+            ],
+            [
+              -106.42,
+              31.750000000000004
+            ],
+            [
+              -106.43,
+              31.750000000000004
+            ],
+            [
+              -106.45,
+              31.780000000000005
+            ],
+            [
+              -106.12,
+              31.850000000000005
+            ],
+            [
+              -106.05000000000001,
+              31.620000000000005
+            ],
+            [
+              -106.29,
+              31.590000000000003
+            ],
+            [
+              -106.3,
+              31.62
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194246-2809082",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194246-2809082",
+        "areaDesc": "El Paso, TX",
+        "geocode": {
+          "UGC": [
+            "TXC141"
+          ],
+          "SAME": [
+            "048141"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC141"
+        ],
+        "references": [],
+        "sent": "2018-10-31T13:12:00-06:00",
+        "effective": "2018-10-31T13:12:00-06:00",
+        "onset": "2018-10-31T13:12:00-06:00",
+        "expires": "2018-10-31T16:15:00-06:00",
+        "ends": "2018-10-31T16:15:00-06:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS El Paso TX/Santa Teresa NM",
+        "headline": "Flood Advisory issued October 31 at 1:12PM MDT expiring October 31 at 4:15PM MDT by NWS El Paso TX/Santa Teresa NM",
+        "description": "The National Weather Service in El Paso has issued a\n\n* Urban and Arroyo Flood Advisory for...\nCentral El Paso County in southwestern Texas...\n\n* Until 415 PM MDT.\n\n* At 111 PM MDT, Doppler radar indicated heavy rain due to\nthunderstorms. This will cause urban and arroyo flooding in the\nadvisory area.\n\n* Radar estimates one-half to one inch of rain has fallen in less\nthan one hour.\n\n* Some locations that may experience flooding include...\nMission Valley...\nAgua Dulce...\nSparks...\nDairyland...\nHorizon City...\nSocorro...\nEast El Paso...\nLake Way Estates...\nMontana Vista...\nFar East El Paso...\nColonia del Paso...\nCentral El Paso...\nHomestead Meadows...\nClint...\nand San Elizario.",
+        "instruction": "",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KEPZ.FA.Y.0190.181031T1912Z-181031T2215Z/"
+          ],
+          "PIL": [
+            "EPZFLSEPZ"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-10-31T16:15:00-06:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194243-2809079",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.05,
+              33.19
+            ],
+            [
+              -95.95,
+              33.089999999999996
+            ],
+            [
+              -96.0699999,
+              33.029999999999994
+            ],
+            [
+              -96.19,
+              33.169999999999995
+            ],
+            [
+              -96.05,
+              33.19
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194243-2809079",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194243-2809079",
+        "areaDesc": "Hunt, TX",
+        "geocode": {
+          "UGC": [
+            "TXC231"
+          ],
+          "SAME": [
+            "048231"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC231"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193993-2808941",
+            "identifier": "NWS-IDP-PROD-3193993-2808941",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:37:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:08:00-05:00",
+        "effective": "2018-10-31T14:08:00-05:00",
+        "onset": "2018-10-31T18:24:00-05:00",
+        "expires": "2018-11-01T02:07:00-05:00",
+        "ends": "2018-11-02T13:47:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 2:08PM CDT expiring November 2 at 1:47PM CDT by NWS Fort Worth TX",
+        "description": "Cowleech Fork Sabine River At Greenville Affecting Hunt County\n\nSouth Fork Sabine River Near Quinlan Affecting Hunt and Rockwall\nCounties\nThe Flood Warning continues for\nThe Cowleech Fork Sabine River At Greenville.\n* At 0145 PM Wednesday the stage was 5.43 feet.\n* Flood stage is  14 feet.\n* Minor flooding is forecast.\n* Forecast...The river is expected to rise above flood stage by\nWednesday evening and crest near 17 feet by Thursday morning. The\nriver should fall below flood stage after midnight Thursday night.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.EXT.KFWD.FL.W.0132.181031T2324Z-181102T1847Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-11-02T13:47:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194242-2809078",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.27,
+              32.97
+            ],
+            [
+              -96.14999999999999,
+              32.93
+            ],
+            [
+              -96.19999999999999,
+              32.83
+            ],
+            [
+              -96.33999999999999,
+              32.87
+            ],
+            [
+              -96.27,
+              32.97
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194242-2809078",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194242-2809078",
+        "areaDesc": "Rockwall, TX; Hunt, TX",
+        "geocode": {
+          "UGC": [
+            "TXC397",
+            "TXC231"
+          ],
+          "SAME": [
+            "048397",
+            "048231"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC397",
+          "https://api.weather.gov/zones/county/TXC231"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193994-2808942",
+            "identifier": "NWS-IDP-PROD-3193994-2808942",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-31T08:37:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T14:08:00-05:00",
+        "effective": "2018-10-31T14:08:00-05:00",
+        "onset": "2018-10-31T19:36:00-05:00",
+        "expires": "2018-11-01T02:07:00-05:00",
+        "ends": "2018-11-02T01:46:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 2:08PM CDT expiring November 2 at 1:46AM CDT by NWS Fort Worth TX",
+        "description": "Cowleech Fork Sabine River At Greenville Affecting Hunt County\n\nSouth Fork Sabine River Near Quinlan Affecting Hunt and Rockwall\nCounties\nThe Flood Warning continues for\nThe South Fork Sabine River Near Quinlan.\n* At 0145 PM Wednesday the stage was 6.23 feet.\n* Flood stage is  15 feet.\n* Minor flooding is forecast.\n* Forecast...The river is expected to rise above flood stage by\nWednesday evening and crest near 18 feet by Thursday morning. The\nriver should fall below flood stage by Thursday afternoon.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.EXT.KFWD.FL.W.0133.181101T0036Z-181102T0646Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-11-02T01:46:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194114-2808995",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.3199999,
+              31.42
+            ],
+            [
+              -94.51,
+              31.91
+            ],
+            [
+              -94.47,
+              31.92
+            ],
+            [
+              -94.28999999999999,
+              31.57
+            ],
+            [
+              -94.3,
+              31.5
+            ],
+            [
+              -94.3199999,
+              31.42
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194114-2808995",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194114-2808995",
+        "areaDesc": "Rusk, TX; Shelby, TX; Nacogdoches, TX; San Augustine, TX",
+        "geocode": {
+          "UGC": [
+            "TXC401",
+            "TXC419",
+            "TXC347",
+            "TXC405"
+          ],
+          "SAME": [
+            "048401",
+            "048419",
+            "048347",
+            "048405"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC401",
+          "https://api.weather.gov/zones/county/TXC419",
+          "https://api.weather.gov/zones/county/TXC347",
+          "https://api.weather.gov/zones/county/TXC405"
+        ],
+        "references": [],
+        "sent": "2018-10-31T10:12:00-05:00",
+        "effective": "2018-10-31T10:12:00-05:00",
+        "onset": "2018-11-01T07:00:00-05:00",
+        "expires": "2018-11-01T10:10:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Flood Warning issued October 31 at 10:11AM CDT by NWS Shreveport LA",
+        "description": "The National Weather Service in Shreveport has issued a\n\n* FLOOD WARNING FOR\nthe Attoyac Bayou Near Chireno, Texas.\n* from Thursday morning until further notice...or until the warning\nis cancelled.\n* At 9:30 AM Wednesday The stage was 12.9 feet.\n* Minor flooding is forecast.\n* Flood stage is 14 feet.\n* Forecast...Rise above flood stage by Thursday morning and continue\nto rise to near 15.5 feet by Saturday early afternoon.\n* Impact...Minor lowland flooding.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\n\nDo not drive vehicles through flooded waterways.  Use caution when\nwalking near flooded riverbanks.  Do not try to wade or swim in\nflooded rivers and bayous.\n\nFor more hydrologic information, copy and paste the following website\naddress into your favorite web browser URL bar:\nwater.weather.gov/ahps2/index.php?wfo=shv",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KSHV.FL.W.0093.181101T1200Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVFLWSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194109-2808990",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.74,
+              32.78
+            ],
+            [
+              -95.35,
+              32.63
+            ],
+            [
+              -95.35,
+              32.57
+            ],
+            [
+              -95.5,
+              32.59
+            ],
+            [
+              -95.74,
+              32.7299999
+            ],
+            [
+              -95.74,
+              32.78
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194109-2808990",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194109-2808990",
+        "areaDesc": "Wood, TX; Smith, TX",
+        "geocode": {
+          "UGC": [
+            "TXC499",
+            "TXC423"
+          ],
+          "SAME": [
+            "048499",
+            "048423"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC499",
+          "https://api.weather.gov/zones/county/TXC423"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3192932-2808415",
+            "identifier": "NWS-IDP-PROD-3192932-2808415",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-30T10:27:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T10:10:00-05:00",
+        "effective": "2018-10-31T10:10:00-05:00",
+        "onset": "2018-10-31T10:10:00-05:00",
+        "expires": "2018-11-01T10:10:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Flood Warning issued October 31 at 10:10AM CDT by NWS Shreveport LA",
+        "description": "",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\n\nDo not drive vehicles through flooded waterways.  Use caution when\nwalking near flooded riverbanks.  Do not try to wade or swim in\nflooded rivers and bayous.\n\nFor more hydrologic information, copy and paste the following website\naddress into your favorite web browser URL bar:\nwater.weather.gov/ahps2/index.php?wfo=shv",
+        "response": "Avoid",
+        "parameters": {
+          "NWSheadline": [
+            "forecast flooding increased from Minor to Moderate severity"
+          ],
+          "VTEC": [
+            "/O.CON.KSHV.FL.W.0082.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVFLWSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194110-2808991",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.35,
+              32.63
+            ],
+            [
+              -95.08999999999999,
+              32.57
+            ],
+            [
+              -95.07999999999998,
+              32.53
+            ],
+            [
+              -95.20999989999999,
+              32.54
+            ],
+            [
+              -95.34999999999998,
+              32.57
+            ],
+            [
+              -95.35,
+              32.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194110-2808991",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194110-2808991",
+        "areaDesc": "Wood, TX; Smith, TX; Upshur, TX",
+        "geocode": {
+          "UGC": [
+            "TXC499",
+            "TXC423",
+            "TXC459"
+          ],
+          "SAME": [
+            "048499",
+            "048423",
+            "048459"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC499",
+          "https://api.weather.gov/zones/county/TXC423",
+          "https://api.weather.gov/zones/county/TXC459"
+        ],
+        "references": [],
+        "sent": "2018-10-31T10:10:00-05:00",
+        "effective": "2018-10-31T10:10:00-05:00",
+        "onset": "2018-11-01T02:00:00-05:00",
+        "expires": "2018-11-01T10:10:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Flood Warning issued October 31 at 10:10AM CDT by NWS Shreveport LA",
+        "description": "The National Weather Service in Shreveport has issued a\n\n* FLOOD WARNING FOR\nthe Sabine River Near Hawkins, Texas.\n* from late tonight until further notice...or until the warning is\ncancelled.\n* At 9:45 AM Wednesday the stage was 22.1 feet.\n* Minor flooding is forecast.\n* Flood stage is 23 feet.\n* Forecast...Rise above flood stage by early Thursday morning and\ncontinue to rise to near 25.0 feet by Sunday morning.\n* Impact...Minor lowland flooding of boat ramps.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\n\nDo not drive vehicles through flooded waterways.  Use caution when\nwalking near flooded riverbanks.  Do not try to wade or swim in\nflooded rivers and bayous.\n\nFor more hydrologic information, copy and paste the following website\naddress into your favorite web browser URL bar:\nwater.weather.gov/ahps2/index.php?wfo=shv",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KSHV.FL.W.0092.181101T0700Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVFLWSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194113-2808994",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.84,
+              30.97
+            ],
+            [
+              -95.62,
+              30.959999999999997
+            ],
+            [
+              -95.28,
+              30.929999999999996
+            ],
+            [
+              -95.28,
+              30.819999999999997
+            ],
+            [
+              -95.62,
+              30.869999999999997
+            ],
+            [
+              -95.84,
+              30.88
+            ],
+            [
+              -95.84,
+              30.97
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194113-2808994",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194113-2808994",
+        "areaDesc": "Walker, TX; Polk, TX; San Jacinto, TX; Trinity, TX",
+        "geocode": {
+          "UGC": [
+            "TXC471",
+            "TXC373",
+            "TXC407",
+            "TXC455"
+          ],
+          "SAME": [
+            "048471",
+            "048373",
+            "048407",
+            "048455"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC471",
+          "https://api.weather.gov/zones/county/TXC373",
+          "https://api.weather.gov/zones/county/TXC407",
+          "https://api.weather.gov/zones/county/TXC455"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193478-2808675",
+            "identifier": "NWS-IDP-PROD-3193478-2808675",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-30T20:27:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T10:10:00-05:00",
+        "effective": "2018-10-31T10:10:00-05:00",
+        "onset": "2018-10-31T10:10:00-05:00",
+        "expires": "2018-11-01T10:10:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Flood Warning issued October 31 at 10:10AM CDT by NWS Houston/Galveston TX",
+        "description": "A river flood warning remains in effect for the Trinity River.\nThe Flood Warning continues for\nThe Trinity River Near Riverside\n* until further notice...or until the warning is canceled.\n* At 0933 AM Wednesday the stage was 135.9 feet.\n* Minor flooding is occurring and Moderate flooding is forecast.\n* Flood stage is 133.5 feet.\n* Forecast...The river will continue rising to near 136.5 feet by Sunday early\nafternoon then begin falling.\n* At 136.0 feet...Moderate lowland flooding begins in the vicinity of the gage.\nThe lowest homes in the Green Rich Shores Subdivision are flooded and Thomas\nLake Road is inundated and impassable. Low roads in the Deep River Plantation\nSubdivision are inundated. The lowest roads into properties off FM 980\nnorthwest of Riverside are inundated and the lowest buildings are threatened.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nPersons are urged to stay away from the river until water levels recede.\n\nMotorists should avoid any water covered roads and find an alternate route.\n\nLivestock and equipment should remain out of the flood plain for the next few\ndays.\n\n\n\nStay tuned to NOAA Weather radio or other news sources for further updates.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KHGX.FL.W.0048.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "HGXFLSHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194112-2808993",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.75,
+              30.27
+            ],
+            [
+              -94.7,
+              29.96
+            ],
+            [
+              -94.87,
+              29.96
+            ],
+            [
+              -94.89,
+              30.27
+            ],
+            [
+              -94.75,
+              30.27
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194112-2808993",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194112-2808993",
+        "areaDesc": "Liberty, TX",
+        "geocode": {
+          "UGC": [
+            "TXC291"
+          ],
+          "SAME": [
+            "048291"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC291"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193479-2808676",
+            "identifier": "NWS-IDP-PROD-3193479-2808676",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-30T20:27:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T10:10:00-05:00",
+        "effective": "2018-10-31T10:10:00-05:00",
+        "onset": "2018-10-31T10:10:00-05:00",
+        "expires": "2018-11-01T10:10:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Flood Warning issued October 31 at 10:10AM CDT by NWS Houston/Galveston TX",
+        "description": "A river flood warning remains in effect for the Trinity River.\nThe Flood Warning continues for\nThe Trinity River In Liberty\n* until further notice...or until the warning is canceled.\n* At 0915 AM Wednesday the stage was 28.0 feet.\n* Moderate flooding is occurring and Moderate flooding is forecast.\n* Flood stage is 26.0 feet.\n* Forecast...The river will continue rising to near 28.8 feet by Sunday early\nafternoon then begin falling.\n* At 29.0 feet...Major lowland flooding begins as homes in several subdivisions\nabove Liberty begin flooding. Extensive flooding over much of Liberty County\ncan be expected with each incremental rise in the river.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nPersons are urged to stay away from the river until water levels recede.\n\nMotorists should avoid any water covered roads and find an alternate route.\n\nLivestock and equipment should remain out of the flood plain for the next few\ndays.\n\n\n\nStay tuned to NOAA Weather radio or other news sources for further updates.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KHGX.FL.W.0049.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "HGXFLSHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194111-2808992",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.7,
+              29.96
+            ],
+            [
+              -94.66,
+              29.79
+            ],
+            [
+              -94.78999999999999,
+              29.79
+            ],
+            [
+              -94.86999999999999,
+              29.96
+            ],
+            [
+              -94.7,
+              29.96
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194111-2808992",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194111-2808992",
+        "areaDesc": "Chambers, TX; Liberty, TX",
+        "geocode": {
+          "UGC": [
+            "TXC071",
+            "TXC291"
+          ],
+          "SAME": [
+            "048071",
+            "048291"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC071",
+          "https://api.weather.gov/zones/county/TXC291"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193477-2808674",
+            "identifier": "NWS-IDP-PROD-3193477-2808674",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-30T20:27:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T10:10:00-05:00",
+        "effective": "2018-10-31T10:10:00-05:00",
+        "onset": "2018-10-31T10:10:00-05:00",
+        "expires": "2018-11-01T10:10:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Houston/Galveston TX",
+        "headline": "Flood Warning issued October 31 at 10:10AM CDT by NWS Houston/Galveston TX",
+        "description": "A river flood warning remains in effect for the Trinity River.\nThe Flood Warning continues for\nThe Trinity River Near Moss Bluff\n* until further notice...or until the warning is canceled.\n* At 0930 AM Wednesday the stage was 14.0 feet.\n* Minor flooding is occurring and Minor flooding is forecast.\n* Flood stage is 12.2 feet.\n* Forecast...The river will continue to fall to a stage of 13.9 feet by .",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nPersons are urged to stay away from the river until water levels recede.\n\nMotorists should avoid any water covered roads and find an alternate route.\n\nLivestock and equipment should remain out of the flood plain for the next few\ndays.\n\n\n\nStay tuned to NOAA Weather radio or other news sources for further updates.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KHGX.FL.W.0050.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "HGXFLSHGX"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194104-2808987",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.92,
+              31.38
+            ],
+            [
+              -94.55,
+              31.07
+            ],
+            [
+              -94.59,
+              31.03
+            ],
+            [
+              -94.85000000000001,
+              31.11
+            ],
+            [
+              -95.00000000000001,
+              31.36
+            ],
+            [
+              -94.92,
+              31.38
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194104-2808987",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194104-2808987",
+        "areaDesc": "Tyler, TX; Houston, TX; Polk, TX; Trinity, TX; Angelina, TX",
+        "geocode": {
+          "UGC": [
+            "TXC457",
+            "TXC225",
+            "TXC373",
+            "TXC455",
+            "TXC005"
+          ],
+          "SAME": [
+            "048457",
+            "048225",
+            "048373",
+            "048455",
+            "048005"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC457",
+          "https://api.weather.gov/zones/county/TXC225",
+          "https://api.weather.gov/zones/county/TXC373",
+          "https://api.weather.gov/zones/county/TXC455",
+          "https://api.weather.gov/zones/county/TXC005"
+        ],
+        "references": [],
+        "sent": "2018-10-31T10:07:00-05:00",
+        "effective": "2018-10-31T10:07:00-05:00",
+        "onset": "2018-11-02T05:00:00-05:00",
+        "expires": "2018-11-01T10:06:00-05:00",
+        "ends": "2018-11-05T12:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Flood Warning issued October 31 at 10:07AM CDT expiring November 5 at 11:00AM CST by NWS Shreveport LA",
+        "description": "The National Weather Service in Shreveport has issued a\n\n* FLOOD WARNING FOR\nthe Neches River Near Diboll, Texas.\n* from late Thursday night to Monday morning...or until the warning\nis cancelled.\n* At 9:15 AM Wednesday the stage was 10.8 feet.\n* Minor flooding is forecast.\n* Flood stage is 12 feet.\n* Forecast...Rise above flood stage by Friday morning and continue to\nrise to near 12.7 feet by Saturday early afternoon. The river will\nfall below flood stage by Sunday afternoon.\n* Impact...Minor lowland flooding.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\n\nDo not drive vehicles through flooded waterways.  Use caution when\nwalking near flooded riverbanks.  Do not try to wade or swim in\nflooded rivers and bayous.\n\nFor more hydrologic information, copy and paste the following website\naddress into your favorite web browser URL bar:\nwater.weather.gov/ahps2/index.php?wfo=shv",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KSHV.FL.W.0091.181102T1000Z-181105T1700Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVFLWSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-11-05T12:00:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194103-2808986",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.99,
+              32.33
+            ],
+            [
+              -94.89,
+              32.42
+            ],
+            [
+              -94.79,
+              32.45
+            ],
+            [
+              -94.78,
+              32.42
+            ],
+            [
+              -94.98,
+              32.300000000000004
+            ],
+            [
+              -94.99,
+              32.33
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194103-2808986",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194103-2808986",
+        "areaDesc": "Gregg, TX",
+        "geocode": {
+          "UGC": [
+            "TXC183"
+          ],
+          "SAME": [
+            "048183"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC183"
+        ],
+        "references": [],
+        "sent": "2018-10-31T10:06:00-05:00",
+        "effective": "2018-10-31T10:06:00-05:00",
+        "onset": "2018-11-01T04:51:00-05:00",
+        "expires": "2018-11-01T10:05:00-05:00",
+        "ends": "2018-11-03T05:30:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Flood Warning issued October 31 at 10:06AM CDT expiring November 3 at 5:30AM CDT by NWS Shreveport LA",
+        "description": "The National Weather Service in Shreveport has issued a\n\n* FLOOD WARNING FOR\nthe Rabbit Creek At Kilgore, Texas.\n* from late tonight to late Friday night...or until the warning is\ncancelled.\n* At 9:45 AM Wednesday the stage was 4.0 feet.\n* Minor flooding is forecast.\n* Flood stage is 10 feet.\n* Forecast...Rise above flood stage by early Thursday morning and\ncontinue to rise to near 10.5 feet by Thursday morning. The\ncreek will fall below flood stage by Thursday afternoon.\n* Impact...Minor lowland flooding.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\n\nDo not drive vehicles through flooded waterways.  Use caution when\nwalking near flooded riverbanks.  Do not try to wade or swim in\nflooded rivers and bayous.\n\nFor more hydrologic information, copy and paste the following website\naddress into your favorite web browser URL bar:\nwater.weather.gov/ahps2/index.php?wfo=shv",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.NEW.KSHV.FL.W.0090.181101T0951Z-181103T1030Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVFLWSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ],
+          "eventEndingTime": [
+            "2018-11-03T05:30:00-05:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194097-2808980",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.09,
+              32.57
+            ],
+            [
+              -94.9,
+              32.51
+            ],
+            [
+              -94.91000000000001,
+              32.449999999999996
+            ],
+            [
+              -95.01,
+              32.51
+            ],
+            [
+              -95.08,
+              32.53
+            ],
+            [
+              -95.09,
+              32.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3194097-2808980",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3194097-2808980",
+        "areaDesc": "Wood, TX; Smith, TX; Upshur, TX; Gregg, TX",
+        "geocode": {
+          "UGC": [
+            "TXC499",
+            "TXC423",
+            "TXC459",
+            "TXC183"
+          ],
+          "SAME": [
+            "048499",
+            "048423",
+            "048459",
+            "048183"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC499",
+          "https://api.weather.gov/zones/county/TXC423",
+          "https://api.weather.gov/zones/county/TXC459",
+          "https://api.weather.gov/zones/county/TXC183"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3192933-2808416",
+            "identifier": "NWS-IDP-PROD-3192933-2808416",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-30T10:27:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T10:03:00-05:00",
+        "effective": "2018-10-31T10:03:00-05:00",
+        "onset": "2018-10-31T10:02:00-05:00",
+        "expires": "2018-11-01T10:02:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Shreveport LA",
+        "headline": "Flood Warning issued October 31 at 10:02AM CDT by NWS Shreveport LA",
+        "description": "",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\n\nDo not drive vehicles through flooded waterways.  Use caution when\nwalking near flooded riverbanks.  Do not try to wade or swim in\nflooded rivers and bayous.\n\nFor more hydrologic information, copy and paste the following website\naddress into your favorite web browser URL bar:\nwater.weather.gov/ahps2/index.php?wfo=shv",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.EXT.KSHV.FL.W.0087.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "SHVFLSSHV"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193995-2808943",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.67,
+              33.37
+            ],
+            [
+              -95.56,
+              33.409999899999995
+            ],
+            [
+              -95.49000000000001,
+              33.409999899999995
+            ],
+            [
+              -95.48,
+              33.3
+            ],
+            [
+              -95.5699999,
+              33.29
+            ],
+            [
+              -95.67,
+              33.37
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193995-2808943",
+        "@type": "wx:Alert",
+        "id": "NWS-IDP-PROD-3193995-2808943",
+        "areaDesc": "Delta, TX; Hopkins, TX",
+        "geocode": {
+          "UGC": [
+            "TXC119",
+            "TXC223"
+          ],
+          "SAME": [
+            "048119",
+            "048223"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC119",
+          "https://api.weather.gov/zones/county/TXC223"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/NWS-IDP-PROD-3193448-2808649",
+            "identifier": "NWS-IDP-PROD-3193448-2808649",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2018-10-30T19:31:00-05:00"
+          }
+        ],
+        "sent": "2018-10-31T08:39:00-05:00",
+        "effective": "2018-10-31T08:39:00-05:00",
+        "onset": "2018-10-31T08:39:00-05:00",
+        "expires": "2018-10-31T20:39:00-05:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Fort Worth TX",
+        "headline": "Flood Warning issued October 31 at 8:39AM CDT by NWS Fort Worth TX",
+        "description": "South Sulphur River Near Cooper Affecting Delta and Hopkins\nCounties\nThe Flood Warning continues for\nThe South Sulphur River Near Cooper.\n* At 0815 AM Wednesday the stage was 17.41 feet.\n* Flood stage is  16 feet.\n* Minor flooding is occurring and Minor flooding is forecast.\n* Forecast...The river will continue rising to near 18 feet by\nThursday after midnight due to expected rainfall today.\nAdditional rises may be possible thereafter.",
+        "instruction": "PRECAUTIONARY/PREPAREDNESS ACTIONS...\n\nDo not drive cars through flooded areas.\nCaution is urged when walking near riverbanks.\nStay tuned to NOAA All Hazards Radio for the latest river forecasts.",
+        "response": "Avoid",
+        "parameters": {
+          "VTEC": [
+            "/O.CON.KFWD.FL.W.0106.000000T0000Z-000000T0000Z/"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "PIL": [
+            "FWDFLSFWD"
+          ],
+          "BLOCKCHANNEL": [
+            "CMAS",
+            "EAS",
+            "NWEM"
+          ]
+        }
+      }
+    }
+  ],
+  "title": "Current watches, warnings, and advisories for Texas",
+  "updated": "2018-10-31T21:15:34+00:00"
+}

@@ -10,6 +10,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const weatherstemRouter = require('./routes/weatherstem');
 const alertsRouter = require('./routes/alerts');
+const forecastsRouter = require('./routes/forecasts');
 
 const app = express();
 
@@ -30,10 +31,12 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Express Router Middleware
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/weatherstem', weatherstemRouter);
 app.use('/alerts', alertsRouter);
+app.use('/forecasts', forecastsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

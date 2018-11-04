@@ -12,4 +12,8 @@ const weatherStemMiddleware = async (req, res, next) => {
   next();
 };
 
+const nwsForecast = async (req, res, next) => {
+  const nws = new ApiRequest('');
+};
+
 module.exports = { weatherStemMiddleware };

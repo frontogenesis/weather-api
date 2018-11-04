@@ -3,7 +3,6 @@ const router = express.Router();
 
 const { ApiRequest } = require('./../middleware/fetch');
 
-
 router.get('/', (req, res, next) => {
   res.send('Alerts Endpoint');
 });
