@@ -5,22 +5,20 @@ const { weatherStemMiddleware } = require('./../middleware/weatherstem');
 
 /* GET home page. */
 router.get('/', weatherStemMiddleware, (req, res, next) => {
-  const stationName = req.data[198].name
-  const temperature = req.data[198].observation.temperature;
-  const windSpeed = Math.round(req.data[198].observation.wind_speed);
-  const windGust = Math.round(req.data[198].observation.gust);
-  const cameraName = req.data[198].photos[0].name;
-  const cameraUrl = req.data[198].photos[0].url;
+
+  const stemData = (stationName) => req.data.filter(station => station.name === stationName);
+
+  const filteredStemData = stemData('University of Florida');
 
   res.render('index', { 
     title: 'The Wet Microburst API',
     layout: 'layout.hbs',
-    stationName,
-    temperature,
-    windSpeed,
-    windGust,
-    cameraName,
-    cameraUrl
+    stationName: filteredStemData[0].name,
+    temperature: filteredStemData[0].observation.temperature,
+    windSpeed: Math.round(filteredStemData[0].observation.wind_speed),
+    windGust: Math.round(filteredStemData[0].observation.gust),
+    cameraName: filteredStemData[0].photos[0].name,
+    cameraUrl: filteredStemData[0].photos[0].url
   });
 });
 

@@ -1,10 +1,14 @@
-<a href="#" id="find-me">Click here to find me</a> <br />
-<span id="lat"></span>&nbsp;<span id="lon"></span>
-<p></p>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <p><a href="#" id="find-me"><i class="fas fa-location-arrow"></i>&nbsp;Locate Me</a></p>
+    <p><span id="lat"></span>&nbsp;<span id="lon"></span></p>
+    <p></p>
+  </div>
+</div>
 
 <div class="row">
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="border-right: thick solid black">
-    <h3>Quick Cast</h3>
+    <h3 id="quick-cast"></h3>
     <div class="row">
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         <span id="temperature"></span> <br />
@@ -15,10 +19,9 @@
       </div>
     </div>
   </div>
-  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" height="300px" max-height="300px">
     <h3>The Forecast Details</h3>
-    <p><span id="daypart"></span><span id="detailedFcst">Retrieving Forecast Details...</span></p>
-    <p><span id="daypart2"></span><span id="detailedFcst2"></span></p>
+      <div id="detailedFcst">Retrieving Forecast Details...</div></p>
   </div>
 </div>
 

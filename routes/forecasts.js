@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
   });
 });
 
-router.post('/:lat,:lon', async (req, res, next) => {
+router.get('/:lat,:lon', async (req, res, next) => {
   const lat = req.params.lat;
   const lon = req.params.lon;
 

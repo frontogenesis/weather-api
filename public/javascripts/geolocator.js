@@ -10,9 +10,9 @@
     document.getElementById('lat').innerHTML = '<b>Your Latitude: </b>' + lat.toFixed(2) + '&nbsp;';
     document.getElementById('lon').innerHTML = '<b>Your Longitude: </b>' + lon.toFixed(2) + '&nbsp;';
 
-    const apiURL = `https://api.weather.gov/points/${lat}%2C${lon}/forecast`;
-    
-    retrieveWeatherData(apiURL);
+    const apiUrl = `https://api.weather.gov/points/${lat}%2C${lon}/forecast`;
+
+    retrieveWeatherData(apiUrl);
   };
 
   // Log the error to console (for now)
@@ -22,7 +22,7 @@
 
   // Set geolocator options
   const options = {
-    enableHighAccuracy: true,
+    enableHighAccuracy: false,
     timeout: 10000,
     maximumAge: 0
   };
@@ -33,18 +33,35 @@
     const data = await response.json();
 
     if (data.properties) {
-      // Part 1
+
+      // Return entire forecast
+      const renderForecastFull = () => {
+        let fullForecast = '';
+        data.properties.periods.forEach((period) => fullForecast += (`<p><b>${period.name}:</b> ${period.detailedForecast}</p>`));
+        document.getElementById('detailedFcst').innerHTML = fullForecast;
+
+        return detailedForecast;
+      };
+
+      // Return only parts of the forecast
+      const renderForecastPeriods = (start, end) => {
+        let forecastSnippet = '';
+        
+        for (let period = start; period < end; period++) {
+          forecastSnippet += `<p><b>${data.properties.periods[period].name}:</b> ${data.properties.periods[period].detailedForecast}</p>`;
+        }
+
+        return forecastSnippet;
+      };
+      
+      document.getElementById('detailedFcst').innerHTML = renderForecastPeriods(0, 4);
+
       const icon = data.properties.periods[0].icon;
+      document.getElementById('quick-cast').innerHTML = data.properties.periods[0].name;
       document.getElementById('temperature').innerHTML = '<b>Temp: </b>' + data.properties.periods[0].temperature + '&deg;';
       document.getElementById('wdir').innerHTML = '<b>Wind: </b>' + data.properties.periods[0].windDirection + '&nbsp;';
       document.getElementById('wspd').innerHTML = data.properties.periods[0].windSpeed;
       document.getElementById('sky').setAttribute('src', icon);
-      document.getElementById('daypart').innerHTML = '<b>' + data.properties.periods[0].name + ': </b>';
-      document.getElementById('detailedFcst').innerText = data.properties.periods[0].detailedForecast;
-
-      // Part 2
-      document.getElementById('daypart2').innerHTML = '<b>' + data.properties.periods[1].name + ': </b>';
-      document.getElementById('detailedFcst2').innerText = data.properties.periods[1].detailedForecast;
 
     } else {
       document.getElementById('detailedFcst').innerText = 'Forecast unavailable';
