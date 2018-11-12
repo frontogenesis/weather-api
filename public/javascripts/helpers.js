@@ -92,18 +92,18 @@ const convertToDayOfWeek = (fullDate) => {
 
 // Get Hour + AM or PM
 const convertToHour = (fullDate) => {
-  const hour = new Date(fullDate).getHours();
+  const militaryHour = new Date(fullDate).getHours();
 
   let hourOfDay;
 
-  if (hour >= 1 && hour <= 11) {
-    hourOfDay = hour + ' AM';
-  } else if (hour >= 13 && hour <= 23) {
-    hourOfDay = (hour - 12) + ' PM';
-  } else if (hour === 12) {
-    hourOfDay = hour + ' PM';
-  } else if (hour === 0) {
-    hourOfDay = hour + ' AM';
+  if (militaryHour >= 1 && militaryHour <= 11) {
+    hourOfDay = militaryHour + ' AM';
+  } else if (militaryHour >= 13 && militaryHour <= 23) {
+    hourOfDay = (militaryHour - 12) + ' PM';
+  } else if (militaryHour === 12) {
+    hourOfDay = militaryHour + ' PM';
+  } else if (militaryHour === 0) {
+    hourOfDay = militaryHour + ' AM';
   } else {
     hourOfDay = 'Unknown';
   }
@@ -121,6 +121,8 @@ const convertToTime = (fullDate) => {
     hour = militaryHour - 12;
   } else if (militaryHour === 0 || militaryHour === 12) {
     hour === 12;
+  } else if (militaryHour >=1 && militaryHour <= 11) {
+    hour = militaryHour;
   }
 
   let amOrPm;
