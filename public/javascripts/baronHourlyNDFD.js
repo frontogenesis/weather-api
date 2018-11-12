@@ -17,7 +17,7 @@ getBaronNDFDHourly().then((data) => {
     document.getElementById(`wx${fhr}`).innerHTML = data.weather_code.text;
     document.getElementById(`temp${fhr}`).innerHTML = convertTemperature(data.temperature.value).fahrenheit;
     document.getElementById(`pop${fhr}`).innerHTML = `${ data.precipitation.probability.value }%`
-    document.getElementById(`wind${fhr}`).innerHTML = `${ convertDirection(data.wind.dir) } ${ convertMsToMph(data.wind.speed) }`;
+    document.getElementById(`wind${fhr}`).innerHTML = `${ convertDirection(data.wind.dir).short } ${ convertMsToMph(data.wind.speed) }`;
   });
 }).catch((error) => {
   console.log(error);

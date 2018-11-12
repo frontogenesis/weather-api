@@ -112,7 +112,7 @@
       }
     
       document.getElementById(`dewpoint`).innerHTML = `${ convertTemperature(data.dewpoint.value).fahrenheit }&deg;`;
-      document.getElementById(`windNow`).innerHTML = `${ convertDirection(data.windDirection.value) } ${ convertMsToMph(data.windSpeed.value) } mph`;
+      document.getElementById(`windNow`).innerHTML = `${ convertDirection(data.windDirection.value).short } ${ convertMsToMph(data.windSpeed.value) } mph`;
       document.getElementById(`lastUpdated`).innerHTML = convertToTime(data.timestamp);
 
     } else {

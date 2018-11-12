@@ -18,40 +18,40 @@ const convertMsToMph = (spd) => {
 const convertDirection = (wDir) => {
   let direction;
   if (wDir >0 && wDir <=22) {
-      direction = 'N'
+      direction = { long: 'North', short: 'N' };
   }
   else if (wDir >22 && wDir <=67) {
-      direction = 'NE'
+      direction = { long: 'Northeast', short: 'NE' };
   }
   else if (wDir >67 && wDir <=112) {
-      direction = 'E'
+      direction = { long: 'East', short: 'E' };
   }
   else if (wDir >112 && wDir <=157) {
-      direction = 'SE'
+      direction = { long: 'Southeast', short: 'SE' };
   }
   else if (wDir >157 && wDir <=202) {
-      direction = 'S'
+      direction = { long: 'South', short: 'S' };
   }
   else if (wDir >202 && wDir <=247) {
-      direction = 'SW'
+      direction = { long: 'Southwest', short: 'SW' };
   }
   else if (wDir >247 && wDir <=292) {
-      direction = 'W'
+      direction = { long: 'West', short: 'W' };
   }
   else if (wDir >292 && wDir <=337) {
-      direction = 'NW'
+      direction = { long: 'Northwest', short: 'NW' };
   }
   else if (wDir >337 && wDir <=360) {
-      direction = 'N'
+      direction = { long: 'North', short: 'N' };
   }
   else if (wDir === 0) {
-      direction = null;
+      direction = { long: null, short: null };
   }
   else if (wDir === null) {
-      direction = 'Variable'
+      direction = { long: 'Variable', short: 'Var' };
   }
   else {
-      direction = 'Unknown'
+      direction = { long: 'Unknown', short: 'Unk' };
   }
   return direction
 };
@@ -123,6 +123,8 @@ const convertToTime = (fullDate) => {
     hour === 12;
   } else if (militaryHour >=1 && militaryHour <= 11) {
     hour = militaryHour;
+  } else {
+    hour = 'Unknown';
   }
 
   let amOrPm;
