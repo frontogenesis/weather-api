@@ -10,6 +10,13 @@ router.get('/', (req, res, next) => {
   });
 });
 
+router.get('/baron', (req, res, next) => {
+  res.render('baron', {
+    title: 'Baron API Weather Samples',
+    layout: 'layout.hbs'
+  });
+});
+
 router.get('/:lat,:lon', async (req, res, next) => {
   const lat = req.params.lat;
   const lon = req.params.lon;

@@ -10,9 +10,13 @@
     document.getElementById('lat').innerHTML = '<b>Your Latitude: </b>' + lat.toFixed(2) + '&nbsp;';
     document.getElementById('lon').innerHTML = '<b>Your Longitude: </b>' + lon.toFixed(2) + '&nbsp;';
 
-    const apiUrl = `https://api.weather.gov/points/${lat}%2C${lon}/forecast`;
+    const apiUri = {
+      pointForecast: `https://api.weather.gov/points/${lat}%2C${lon}/forecast`,
+      nearestStations: `https://api.weather.gov/points/${lat}%2C${lon}/stations`
+    };
 
-    retrieveWeatherData(apiUrl);
+    retrieveWeatherForecast(apiUri.pointForecast);
+    retrieveNearestStations(apiUri.nearestStations);
   };
 
   // Log the error to console (for now)
@@ -28,7 +32,7 @@
   };
 
   // Fetch weather data from server and populate DOM
-  const retrieveWeatherData = async (apiUrl) => {
+  const retrieveWeatherForecast = async (apiUrl) => {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
@@ -67,6 +71,55 @@
       document.getElementById('detailedFcst').innerText = 'Forecast unavailable';
     }
   };
+
+
+  // Fetch Nearest ASOS Stations
+  const retrieveNearestStations = async (uri) => {
+    const response = await fetch(uri);
+    
+    if (response.ok) {
+      const data = await response.json();
+      const stationName = data.features[0].properties.name;
+      const stationId = data.features[0].properties.stationIdentifier;
+      retrieveCurrentConditions(stationId, stationName);
+    } else {
+      throw new Error('Cannot retrieve data');
+    }
+  };
+
+
+  // Fetch Current Conditions
+  const retrieveCurrentConditions = async (stationId, stationName) => {
+    const uri = `https://api.weather.gov/stations/${stationId}/observations/latest`;
+    const response = await fetch(uri);
+
+    if (response.ok) {
+      let data = await response.json();
+      data = data.properties;
+
+      document.getElementById(`stationName`).innerHTML = stationName;
+      document.getElementById(`phrase`).innerHTML = data.textDescription;
+      document.getElementById(`tempNow`).innerHTML = `${ convertTemperature(data.temperature.value).fahrenheit }&deg;`;
+    
+      if (data.heatIndex.value) {
+        document.getElementById(`feelsLike`).innerHTML = `${ convertTemperature(data.heatIndex.value).fahrenheit }&deg;`;
+      } else if (data.windChill.value) {
+        document.getElementById(`feelsLike`).innerHTML = `${ convertTemperature(data.windChill.value).fahrenheit }&deg;`;
+      } else if (!data.heatIndex.value && !data.windChill.value) {
+        document.getElementById(`feelsLike`).innerHTML = `${ convertTemperature(data.temperature.value).fahrenheit }&deg;`;
+      } else {
+        document.getElementById(`feelsLike`).innerHTML = 'Not available';
+      }
+    
+      document.getElementById(`dewpoint`).innerHTML = `${ convertTemperature(data.dewpoint.value).fahrenheit }&deg;`;
+      document.getElementById(`windNow`).innerHTML = `${ convertDirection(data.windDirection.value) } ${ convertMsToMph(data.windSpeed.value) } mph`;
+      document.getElementById(`lastUpdated`).innerHTML = convertToTime(data.timestamp);
+
+    } else {
+      throw new Error(JSON.stringify(`Cannot retrieve data`));
+    }
+  };
+
 
   // Run browser geolocation API
   document.getElementById('find-me').addEventListener('click', () => {
