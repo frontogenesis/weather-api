@@ -120,7 +120,7 @@ const convertToTime = (fullDate) => {
   if (militaryHour >= 13 && militaryHour <= 23) {
     hour = militaryHour - 12;
   } else if (militaryHour === 0 || militaryHour === 12) {
-    hour === 12;
+    hour = 12;
   } else if (militaryHour >=1 && militaryHour <= 11) {
     hour = militaryHour;
   } else {

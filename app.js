@@ -11,6 +11,7 @@ const usersRouter = require('./routes/users');
 const weatherstemRouter = require('./routes/weatherstem');
 const alertsRouter = require('./routes/alerts');
 const forecastsRouter = require('./routes/forecasts');
+const geoRouter = require('./routes/geo');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use('/users', usersRouter);
 app.use('/weatherstem', weatherstemRouter);
 app.use('/alerts', alertsRouter);
 app.use('/forecasts', forecastsRouter);
+app.use('/geo', geoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
