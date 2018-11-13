@@ -16,15 +16,16 @@ router.get('/places/:location', async (req, res, next) => {
   
   const googlePlaces = new ApiRequest(uri);
   
+  // lat: data.results[0].geometry.location.lat,
+  // lon: data.results[0].geometry.location.lng
 
   try {
     const data = await googlePlaces.get(); 
     res.json({
-      lat: data.results[0].geometry.location.lat,
-      lon: data.results[0].geometry.location.lng
+      data
     })
   } catch(error) {
-    res.status(403).end();
+    res.status(404).end();
   }
 });
 
