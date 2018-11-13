@@ -1,22 +1,25 @@
 ;(function() {
 
+  const baseUrl = `${window.location.protocol}//${window.location.host}`;
+
+  const apiUri = (lat, lon) => {
+    return {
+      pointForecast: `https://api.weather.gov/points/${lat}%2C${lon}/forecast`,
+      nearestStations: `https://api.weather.gov/points/${lat}%2C${lon}/stations`
+    }
+  };
+
   // Geolocator position is found/resolved
   // Pass lat & lon to dynamically calculate URI
   const resolved = (position) => {
-    const coords = position.coords;
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
 
     document.getElementById('lat').innerHTML = '<b>Your Latitude: </b>' + lat.toFixed(2) + '&nbsp;';
     document.getElementById('lon').innerHTML = '<b>Your Longitude: </b>' + lon.toFixed(2) + '&nbsp;';
 
-    const apiUri = {
-      pointForecast: `https://api.weather.gov/points/${lat}%2C${lon}/forecast`,
-      nearestStations: `https://api.weather.gov/points/${lat}%2C${lon}/stations`
-    };
-
-    retrieveWeatherForecast(apiUri.pointForecast);
-    retrieveNearestStations(apiUri.nearestStations);
+    retrieveWeatherForecast(apiUri(lat, lon).pointForecast);
+    retrieveNearestStations(apiUri(lat, lon).nearestStations);
   };
 
   // Log the error to console (for now)
@@ -124,6 +127,25 @@
   // Run browser geolocation API
   document.getElementById('find-me').addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(resolved, err, options);
+  });
+
+
+  // Get User-Entered Location Information
+  document.querySelector('form').addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+    const zipCode = document.getElementById('zip-code').value;
+
+    document.querySelector('form').reset();
+    
+    fetch(`${baseUrl}/geo/places/${zipCode}`)
+      .then(response => response.json())
+      .then((data) => {
+        const apiUris = apiUri(data.lat, data.lon);
+        retrieveWeatherForecast(apiUris.pointForecast);
+        retrieveNearestStations(apiUris.nearestStations);
+      })
+      .catch(error => console.log(error));
   });
 
 })();
