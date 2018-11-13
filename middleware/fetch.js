@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 class ApiRequest {
-  constructor(url) { this.url = url };
+  constructor(url) { this.url = decodeURI(url) };
   async post(data = {}) {
     const response = await fetch(this.url, {
       method: 'POST',

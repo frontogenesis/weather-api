@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/places/:location', async (req, res, next) => {
-  const location = req.params.location;
+  const location = req.params.location.toString();
 
   let uri = `https://maps.googleapis.com/maps/api/geocode/json?`
   const uriParams = `address=${location}&key=${process.env.GOOGLE_PLACES_KEY}`;
