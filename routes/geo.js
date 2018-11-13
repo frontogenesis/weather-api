@@ -11,18 +11,16 @@ router.get('/places/:location', async (req, res, next) => {
   const location = req.params.location;
 
   let uri = `https://maps.googleapis.com/maps/api/geocode/json?`
-  const uriParams = `address=${location}&key=${process.env.GOOGLE_PLACES_KEY}`;
+  const uriParams = `address=${location}&key=${process.env.GOOGLE_GEOCODER_KEY}`;
   uri = `${uri}${uriParams}`;
   
   const googlePlaces = new ApiRequest(uri);
   
-  // lat: data.results[0].geometry.location.lat,
-  // lon: data.results[0].geometry.location.lng
-
   try {
     const data = await googlePlaces.get(); 
     res.json({
-      data
+      lat: data.results[0].geometry.location.lat,
+      lon: data.results[0].geometry.location.lng
     })
   } catch(error) {
     res.status(404).end();

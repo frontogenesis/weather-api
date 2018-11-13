@@ -15,9 +15,6 @@
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
 
-    document.getElementById('lat').innerHTML = '<b>Your Latitude: </b>' + lat.toFixed(2) + '&nbsp;';
-    document.getElementById('lon').innerHTML = '<b>Your Longitude: </b>' + lon.toFixed(2) + '&nbsp;';
-
     retrieveWeatherForecast(apiUri(lat, lon).pointForecast);
     retrieveNearestStations(apiUri(lat, lon).nearestStations);
   };
