@@ -1,6 +1,7 @@
 ;(function() {
 
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
+  console.log(baseUrl);
 
   const apiUri = (lat, lon) => {
     return {
