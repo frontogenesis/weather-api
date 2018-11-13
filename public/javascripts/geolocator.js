@@ -1,7 +1,6 @@
 ;(function() {
 
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
-  console.log(baseUrl);
 
   const apiUri = (lat, lon) => {
     return {
@@ -139,7 +138,7 @@
 
     document.querySelector('form').reset();
     
-    fetch(encodeURI(`${baseUrl}/geo/places/${zipCode}`))
+    fetch(`${baseUrl}/geo/places/${zipCode}`)
       .then(response => response.json())
       .then((data) => {
         const apiUris = apiUri(data.lat, data.lon);
