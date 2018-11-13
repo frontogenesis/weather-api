@@ -18,15 +18,13 @@ router.get('/places/:location', async (req, res, next) => {
   
 
   try {
-    const data = await googlePlaces.get();
-    // res.set("Content-Type",'application/json');
-    // res.type('application/json');
+    const data = await googlePlaces.get(); 
     res.json({
       lat: data.results[0].geometry.location.lat,
       lon: data.results[0].geometry.location.lng
-    }).type('application/json');
+    })
   } catch(error) {
-    res.status(404).end();
+    res.status(403).end();
   }
 });
 
