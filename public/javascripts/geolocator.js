@@ -139,7 +139,7 @@
 
     document.querySelector('form').reset();
     
-    fetch(`${baseUrl}/geo/places/${zipCode}`)
+    fetch(encodeURI(`${baseUrl}/geo/places/${zipCode}`))
       .then(response => response.json())
       .then((data) => {
         const apiUris = apiUri(data.lat, data.lon);
