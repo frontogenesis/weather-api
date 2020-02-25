@@ -30,4 +30,17 @@ router.get('/:lat,:lon', async (req, res, next) => {
   }
 });
 
+router.get('/ndfd/:lat,:lon', async (req, res) => {
+  const lat = req.params.lat
+  const lon = req.params.lon
+
+  const ndfdPointForecast = new ApiRequest(`https://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?lat=${lat}&lon=${lon}&product=time-series&maxt=maxt&mint=mint&pop12=pop12&qpf=qpf&snow=snow`)
+
+  try {
+    res.send(await ndfdPointForecast.getXML())
+  } catch(error) {
+    res.status(404).end()
+  }
+})
+
 module.exports = router;

@@ -1,4 +1,5 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
+const convert = require('xml-js')
 
 class ApiRequest {
   constructor(url) { this.url = url };
@@ -25,6 +26,18 @@ class ApiRequest {
       throw new Error({ message: 'Unable to retrieve data' });
     }
   };
+
+  async getXML() {
+    const response = await fetch(this.url)
+
+    // Get XML and convert to JSON
+    if (response.ok) {
+      const xml = await response.text()
+      return convert.xml2json(xml, { compact: true, spaces: 2, sanitize: true})
+    } else {
+      throw new Error({ message: 'A server error occurred' })
+    }
+  }
 };
 
 module.exports = { ApiRequest };
