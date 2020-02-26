@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { ApiRequest } = require('./../middleware/fetch');
 
-router.get('/', (req, res, next) => {
+router.get('/', (_, res, next) => {
   res.send('Geo Endpoint');
 });
 
