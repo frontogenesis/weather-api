@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/stations', async (req, res, next) => {
-  const weatherstem = new ApiRequest('https://cdn.weatherstem.com/orangestem/data/dynamic/orangestem.json');
+  const weatherstem = new ApiRequest('https://cdn.weatherstem.com/dashboard/data/dynamic/dashboard.json');
 
   try {
     res.json(await weatherstem.get());
