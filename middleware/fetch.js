@@ -33,7 +33,7 @@ class ApiRequest {
     // Get XML and convert to JSON
     if (response.ok) {
       const xml = await response.text()
-      return convert.xml2json(xml, { compact: true, spaces: 2, sanitize: true})
+      return convert.xml2json(xml, { compact: true, spaces: 2, sanitize: false})
     } else {
       throw new Error({ message: 'A server error occurred' })
     }

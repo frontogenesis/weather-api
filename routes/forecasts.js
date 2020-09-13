@@ -1,5 +1,7 @@
 const express = require('express')
 const router = express.Router()
+const xml2js = require('xml2js')
+const axios = require('axios')
 
 const { ApiRequest } = require('./../middleware/fetch')
 
@@ -74,13 +76,18 @@ router.get('/grid/:lat,:lon', async (req, res) => {
 router.get('/ndfd/:lat,:lon', async (req, res) => {
   const [lat, lon] = [req.params.lat, req.params.lon]
 
-  const ndfdPointForecast = new ApiRequest(`https://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?lat=${lat}&lon=${lon}&product=time-series&maxt=maxt&mint=mint&pop12=pop12&qpf=qpf&snow=snow`)
+  axios.get(`https://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?lat=${lat}&lon=${lon}&product=time-series&maxt=maxt&mint=mint&pop12=pop12&qpf=qpf&snow=snow`)
+    .then(response => response.data)
+    .then(data => {
+      xml2js.parseStringPromise(data).then(function (result) {
+        res.json(result)
+      })
+      .catch(function (error) {
+        res.status(500).end()
+      })
 
-  try {
-    res.send(await ndfdPointForecast.getXML())
-  } catch(error) {
-    res.status(500).end()
-  }
+    })
+    .catch(error => res.status(500).end())
 })
 
 router.get('/convoutlook/?lat=:lat&?lon=:lon&?distance=:distance', async (req, res) => {
