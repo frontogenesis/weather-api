@@ -37,7 +37,7 @@ node_modules/
 jspm_packages/
 
 # API Keys
-config/config.json
+config/
 
 # packagelock.json
 package-lock.json

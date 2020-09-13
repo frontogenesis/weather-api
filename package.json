@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon ./bin/www --e js,hbs",
+    "dev": "env-cmd -f ./config/dev.env nodemon ./bin/www --e js,hbs",
     "start": "node ./bin/www"
   },
   "engines": {
@@ -18,5 +18,9 @@
     "morgan": "~1.9.0",
     "node-fetch": "^2.6.0",
     "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.4"
   }
 }
