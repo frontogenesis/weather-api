@@ -3,6 +3,7 @@ const express = require('express')
 const { graphqlHTTP } = require('express-graphql')
 const expressPlayground = require('graphql-playground-middleware-express').default
 const schema = require('./schema')
+const cors = require('cors')
 const hbs = require('hbs')
 const path = require('path')
 const cookieParser = require('cookie-parser')
@@ -17,6 +18,9 @@ const geoRouter = require('./routes/geo')
 
 const app = express()
 
+// Allow cross-origin requests
+app.use(cors())
+
 // HANDLEBARS - view engine setup
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('views', path.join(__dirname, 'views'))
@@ -30,7 +34,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // GraphQL Endpoint
 app.use('/graphql', graphqlHTTP({
-  schema
+  schema,
+  graphiql: true,
 }))
 // Use GraphQL Playground
 app.get('/playground', expressPlayground({ endpoint: '/graphql'}))
