@@ -17,8 +17,8 @@
     <tr>
       <th scope="row">GET</th>
       <td>weatherstem/stations/:id</td>
-      <td>WeatherSTEM API</td>
-      <td>Current conditions from WeatherSTEM stations (station ID required)</td>
+      <td>WeatherSTEM</td>
+      <td>Current conditions from WeatherSTEM station</td>
     </tr>
     <tr>
       <th scope="row">GET</th>
@@ -30,7 +30,19 @@
       <th scope="row">GET</th>
       <td>forecasts/:lat,:lon</td>
       <td>NOAA/NWS</td>
-      <td>Point Forecasts (latitude, longitude required)</td>
+      <td>NWS Point Forecasts</td>
+    </tr>
+    <tr>
+      <th scope="row">GET</th>
+      <td>forecasts/grid/:lat,:lon</td>
+      <td>NOAA/NWS</td>
+      <td>NDFD Detailed Gridpoint Forecasts</td>
+    </tr>
+    <tr>
+      <th scope="row">GET</th>
+      <td>forecasts/convoutlook/lat=:lat&amp;lon=:lon&amp;distance=:distance</td>
+      <td>NOAA/NWS</td>
+      <td>NDFD Convective Outlook</td>
     </tr>
   </tbody>
 </table>

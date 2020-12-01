@@ -1,41 +1,34 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-const { ApiRequest } = require('./../middleware/fetch');
+const { ApiRequest } = require('./../middleware/fetch')
 
 router.get('/', (req, res, next) => {
-  res.send('This is WeatherSTEM Endpoint');
-});
+  res.send('This is WeatherSTEM Endpoint')
+})
 
-router.get('/stations', async (req, res, next) => {
-  const weatherstem = new ApiRequest('https://cdn.weatherstem.com/dashboard/data/dynamic/dashboard.json');
-
-  try {
-    res.json(await weatherstem.get());
-  } catch(error) {
-    res.status(404).end();
-  }
-});
-
-router.get('/stations/:id', async (req, res, next) => {
-  const id = req.params.id;
-
-  const weatherstem = new ApiRequest('https://leon.weatherstem.com/api');
+router.get('/stations', async (req, res) => {
+  const weatherstem = new ApiRequest('https://cdn.weatherstem.com/dashboard/data/dynamic/dashboard.json')
 
   try {
-    const data = await weatherstem.post({
-      api_key: process.env.WEATHERSTEM_SECRET, stations: [id]
-    });
-
-    res.json({
-      stationName: data[0].station.name, 
-      temperature: data[0].record.readings[2].value, 
-      tempUnitSymbol: data[0].record.readings[2].unit_symbol, 
-      camera: data[0].station.cameras[0].image
-    });
+    res.json(await weatherstem.get())
   } catch(error) {
-    res.status(404).end();
+    res.status(404).end()
   }
-});
+})
 
-module.exports = router;
+router.get('/stations/:id', async (req, res) => {
+  const id = req.params.id
+
+  let weatherstem = new ApiRequest('https://cdn.weatherstem.com/dashboard/data/dynamic/dashboard.json')
+
+  try {
+    weatherstem = await weatherstem.get()
+    const stationData = weatherstem.find(station => id === station.id.split('@')[0])
+    res.json(stationData)
+  } catch(error) {
+    res.status(404).end()
+  }
+})
+
+module.exports = router
