@@ -10,6 +10,7 @@ const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 
 const indexRouter = require('./routes/index')
+const apiRouter = require('./routes/api')
 const usersRouter = require('./routes/users')
 const weatherstemRouter = require('./routes/weatherstem')
 const alertsRouter = require('./routes/alerts')
@@ -42,6 +43,7 @@ app.get('/playground', expressPlayground({ endpoint: '/graphql'}))
 
 // Express Router Middleware
 app.use('/', indexRouter)
+app.use('/api', apiRouter)
 app.use('/users', usersRouter)
 app.use('/weatherstem', weatherstemRouter)
 app.use('/alerts', alertsRouter)
@@ -62,6 +64,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500)
   res.render('error')
-});
+})
 
 module.exports = app
