@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const auth = require('../middleware/auth')
 
 const Post = require('../models/post')
 
@@ -51,8 +52,11 @@ router.delete('/:id', async (req, res) => {
     }
 })
 
-router.post('/', async (req, res) => {
-    const post = new Post(req.body)
+router.post('/', auth, async (req, res) => {
+    const post = new Post({
+        ...req.body,
+        author: req.user._id
+    })
 
     try {
         await post.save()
