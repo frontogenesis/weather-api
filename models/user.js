@@ -2,6 +2,8 @@ const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const Post = require('../models/post')
+// const { post } = require('../app')
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -39,8 +41,9 @@ const userSchema = new mongoose.Schema({
             type: String,
             required: true
         }
-    }]
-
+    }],
+}, {
+    timestamps: true
 })
 
 userSchema.virtual('posts', {
@@ -93,6 +96,13 @@ userSchema.pre('save', async function(next) {
         user.password = await bcrypt.hash(user.password, 8)
     }
 
+    next()
+})
+
+// Delete all user posts when user is deleted
+userSchema.pre('remove', async function(next) {
+    const user = this
+    await Post.deleteMany({ author: user._id })
     next()
 })
 

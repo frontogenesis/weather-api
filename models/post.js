@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
 
-const Post = mongoose.model('Post', { 
+const postSchema = new mongoose.Schema({ 
     title: {
         type: String,
         required: true,
@@ -16,6 +16,10 @@ const Post = mongoose.model('Post', {
         required: true,
         ref: 'User'
     }
+}, {
+    timestamps: true
 })
+
+const Post = mongoose.model('Post', postSchema)
 
 module.exports = Post
