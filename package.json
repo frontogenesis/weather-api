@@ -10,6 +10,7 @@
     "node": "12.14.1"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
     "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.4",
