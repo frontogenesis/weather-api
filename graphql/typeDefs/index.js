@@ -4,7 +4,7 @@ const typeDefs = gql`
     type Query {
         _:String!
         hello: String!
-        warnings: [WarningType!]!
+        warnings(state: String!): [WarningType!]!
     }
 
     type Mutation {
@@ -22,16 +22,16 @@ const typeDefs = gql`
     }
 
     type WarningPropertyType {
-        onset: String!
-        ends: String!
+        onset: String
+        ends: String
         event: String!
-        severity: String!
-        certainty: String!
-        urgency: String!
-        headline: String!
-        description: String!
-        instruction: String!
-        response: String!
+        severity: String
+        certainty: String
+        urgency: String
+        headline: String
+        description: String
+        instruction: String
+        response: String
     }
 `
 

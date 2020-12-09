@@ -2,12 +2,16 @@ const axios = require('axios')
 
 const resolvers = {
     Query: {
-      hello() {
-        return 'Hello world test!'
+        hello() {
+            return 'Hello world test!'
       },
-      warnings(parent, args, ctx, info) {
-        return axios.get('https://api.weather.gov/alerts/active?area=FL')
-        .then(res => res.data.features)
+        async warnings(parent, { state }, ctx, info) {
+            try {
+                const warnings = await axios.get(`https://api.weather.gov/alerts/active?area=${state.toUpperCase()}`)
+                return warnings.data.features
+            } catch {
+                throw new Error('Server error')
+            }
       }
     },
 }
