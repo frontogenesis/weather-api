@@ -4,7 +4,6 @@ require('./db/mongoose')
 const { ApolloServer } = require('apollo-server-express')
 const typeDefs = require('./graphql/typeDefs')
 const resolvers = require('./graphql/resolvers')
-const expressPlayground = require('graphql-playground-middleware-express').default
 const cors = require('cors')
 const hbs = require('hbs')
 const path = require('path')
@@ -44,9 +43,7 @@ const server = new ApolloServer({
 })
 
 server.applyMiddleware({ app })
-
-//Use GraphQL Playground
-app.get('/playground', expressPlayground({ endpoint: '/graphql'}))
+app.get('/playground', (_, res) => res.redirect('/graphql'))
 
 // Express Router Middleware
 app.use('/', indexRouter)
