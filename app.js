@@ -38,11 +38,13 @@ app.use(express.static(path.join(__dirname, 'public')))
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: { }
+  context: { },
+  introspection: true,
+  playground: true
 })
 
 server.applyMiddleware({ app })
-//app.get('/playground', (_, res) => res.redirect('/graphql'))
+app.get('/playground', (_, res) => res.redirect('/graphql'))
 
 // Express Router Middleware
 app.use('/', indexRouter)
