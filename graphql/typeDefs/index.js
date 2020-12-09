@@ -4,7 +4,7 @@ const typeDefs = gql`
     type Query {
         _:String!
         hello: String!
-        warnings(data: USStateInput!): [WarningType!]!
+        warnings(data: Geography!): [WarningType!]!
     }
 
     type Mutation {
@@ -16,8 +16,14 @@ const typeDefs = gql`
         _:String!
     }
 
-    input USStateInput {
-        state: String!
+    input Geography {
+        state: String
+        point: Point
+    }
+
+    input Point {
+        lat: Float!
+        lon: Float!
     }
 
     type WarningType {
