@@ -1,9 +1,10 @@
 const createError = require('http-errors')
 const express = require('express')
 require('./db/mongoose')
-const { graphqlHTTP } = require('express-graphql')
+const { ApolloServer } = require('apollo-server-express')
+const typeDefs = require('./graphql/typeDefs')
+const resolvers = require('./graphql/resolvers')
 const expressPlayground = require('graphql-playground-middleware-express').default
-const schema = require('./schema')
 const cors = require('cors')
 const hbs = require('hbs')
 const path = require('path')
@@ -29,18 +30,22 @@ hbs.registerPartials(__dirname + '/views/partials')
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'hbs')
 
-app.use(logger('dev'))
+//app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-// GraphQL Endpoint
-app.use('/graphql', graphqlHTTP({
-  schema,
-  graphiql: true,
-}))
-// Use GraphQL Playground
+// Apollo Server GraphQL
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  context: { }
+})
+
+server.applyMiddleware({ app })
+
+//Use GraphQL Playground
 app.get('/playground', expressPlayground({ endpoint: '/graphql'}))
 
 // Express Router Middleware

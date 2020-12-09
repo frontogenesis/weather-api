@@ -39,6 +39,9 @@ jspm_packages/
 # API Keys
 config/
 
+# Tests
+tests/
+
 # packagelock.json
 package-lock.json
 
