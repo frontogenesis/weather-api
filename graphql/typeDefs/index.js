@@ -4,7 +4,7 @@ const typeDefs = gql`
     type Query {
         _:String!
         hello: String!
-        warnings(state: String!): [WarningType!]!
+        warnings(data: USStateInput!): [WarningType!]!
     }
 
     type Mutation {
@@ -14,6 +14,10 @@ const typeDefs = gql`
 
     type Subscription {
         _:String!
+    }
+
+    input USStateInput {
+        state: String!
     }
 
     type WarningType {
