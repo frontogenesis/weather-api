@@ -28,6 +28,7 @@ const typeDefs = gql`
     type WarningPropertyType {
         onset: String
         ends: String
+        areaDesc: String
         event: String!
         severity: String
         certainty: String
