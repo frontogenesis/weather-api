@@ -9,7 +9,6 @@ const hbs = require('hbs')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
-
 const indexRouter = require('./routes/index')
 const apiRouter = require('./routes/api')
 const usersRouter = require('./routes/users')
@@ -43,7 +42,7 @@ const server = new ApolloServer({
 })
 
 server.applyMiddleware({ app })
-app.get('/playground', (_, res) => res.redirect('/graphql'))
+//app.get('/playground', (_, res) => res.redirect('/graphql'))
 
 // Express Router Middleware
 app.use('/', indexRouter)
