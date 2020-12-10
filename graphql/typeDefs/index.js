@@ -2,14 +2,11 @@ const { gql } = require('apollo-server-express')
 
 const typeDefs = gql`
     type Query {
-        _:String!
-        hello: String!
-        warnings(data: Geography!): [WarningType!]!
+        alerts(data: Geography!): [WarningType!]!
     }
 
     type Mutation {
-        _:String!
-
+        createUser(data: CreateUserInput!): AuthPayload!
     }
 
     type Subscription {
@@ -24,6 +21,25 @@ const typeDefs = gql`
     input Point {
         lat: Float!
         lon: Float!
+    }
+
+    type AuthPayload {
+        token: String!
+        user: User!
+    }
+
+    input CreateUserInput {
+        name: String!
+        email: String!
+        password: String!
+    }
+
+    type User {
+        id: ID!
+        name: String!
+        email: String
+        updatedAt: String!
+        createdAt: String!
     }
 
     type WarningType {

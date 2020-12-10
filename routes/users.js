@@ -4,7 +4,6 @@ const multer = require('multer')
 const sharp = require('sharp')
 const auth = require ('../middleware/auth')
 const { sendWelcomeEmail, sendCancellationEmail } = require('../emails/account')
-const Post = require('../models/post')
 
 const User = require('../models/user')
 

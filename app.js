@@ -18,6 +18,8 @@ const alertsRouter = require('./routes/alerts')
 const forecastsRouter = require('./routes/forecasts')
 const geoRouter = require('./routes/geo')
 
+const User = require('./models/user')
+
 const app = express()
 
 // Allow cross-origin requests
@@ -38,7 +40,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: { },
+  context: {
+  },
   introspection: true,
   playground: true
 })
