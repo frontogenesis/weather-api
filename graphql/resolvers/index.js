@@ -1,5 +1,4 @@
 const axios = require('axios')
-const User = require('../../models/user')
 
 const baseUrl = 'https://api.weather.gov/alerts/active?'
 
@@ -18,15 +17,24 @@ const resolvers = {
         },
     },
     Mutation: {
-        async createUser(parent, args, ctx, info) {
-            let user = new User(args.data)
+        async createUser(parent, args, { db: { User } }, info) {
+            const user = new User(args.data)
 
             try {
-                user = await user.save()
+                await user.save()
                 const token = await user.generateAuthToken()
                 return { user, token }
             } catch(error) {
                 throw new Error(error)
+            }
+        },
+        async login(parent, args, { db: { User }}, info) {
+            try {
+                const user = await User.findByCredentials(args.data.email, args.data.password)
+                const token = await user.generateAuthToken()
+                return { user, token }
+            } catch {
+                throw new Error('Unable to login')
             }
         }
     }

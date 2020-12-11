@@ -18,7 +18,8 @@ const alertsRouter = require('./routes/alerts')
 const forecastsRouter = require('./routes/forecasts')
 const geoRouter = require('./routes/geo')
 
-const User = require('./models/user')
+const db = require('./models')
+const authMiddleware = require('./middleware/auth')
 
 const app = express()
 
@@ -40,13 +41,14 @@ app.use(express.static(path.join(__dirname, 'public')))
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: {
+  context: { 
+    db, 
   },
   introspection: true,
   playground: true
 })
 
-server.applyMiddleware({ app })
+server.applyMiddleware({ app, authMiddleware })
 app.get('/playground', (_, res) => res.redirect('/graphql'))
 
 // Express Router Middleware

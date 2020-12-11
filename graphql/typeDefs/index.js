@@ -7,6 +7,7 @@ const typeDefs = gql`
 
     type Mutation {
         createUser(data: CreateUserInput!): AuthPayload!
+        login(data: LoginUserInput!): AuthPayload!
     }
 
     type Subscription {
@@ -30,6 +31,11 @@ const typeDefs = gql`
 
     input CreateUserInput {
         name: String!
+        email: String!
+        password: String!
+    }
+
+    input LoginUserInput {
         email: String!
         password: String!
     }
