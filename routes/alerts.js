@@ -1,7 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const { ApiRequest } = require('./../middleware/fetch')
+const { getCache } = require('../middleware/redis')
+const { ApiRequest } = require('../middleware/fetch')
 
 router.get('/', (_, res) => {
   res.send('Alerts Endpoint')
@@ -21,10 +22,18 @@ router.get('/:lat,:lon', async (req, res) => {
 
 router.get('/:state', async (req, res) => {
   const state = req.params.state.toUpperCase()
-  const alertsApi = new ApiRequest(`https://api.weather.gov/alerts/active/area/${state}`)
   
   try {
-    res.json(await alertsApi.get())
+    const alertsApi = new ApiRequest(`https://api.weather.gov/alerts/active/area/${state}`)
+
+    let allAlerts = await alertsApi.get()
+    allAlerts = allAlerts.features
+    let newAlerts = await getCache('alerts', allAlerts)
+    
+    res.status(200).json({
+      allAlerts,
+      newAlerts
+    })
   } catch(error) {
     res.status(500).end()
   }
