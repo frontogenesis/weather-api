@@ -8,14 +8,14 @@ const { ApiRequest } = require('./../middleware/fetch')
 router.get('/', (_, res) => {
   res.render('forecasts', {
     title: 'Geocoded Weather Sample',
-    layout: 'layout.hbs'
+    layout: 'layout.handlebars'
   })
 })
 
 router.get('/baron', (_, res) => {
   res.render('baron', {
     title: 'Baron API Weather Samples',
-    layout: 'layout.hbs'
+    layout: 'layout.handlebars'
   })
 })
 

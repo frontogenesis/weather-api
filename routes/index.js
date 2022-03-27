@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const { weatherStemMiddleware } = require('./../middleware/weatherstem')
+const { weatherStemMiddleware } = require('../middleware/weatherstem')
 
 /* GET home page. */
 router.get('/', weatherStemMiddleware, (req, res, next) => {
@@ -12,7 +12,7 @@ router.get('/', weatherStemMiddleware, (req, res, next) => {
 
   res.render('index', { 
     title: 'The Wet Microburst API',
-    layout: 'layout.hbs',
+    layout: 'layout.handlebars',
     stationName: filteredStemData[0].name,
     temperature: filteredStemData[0].observation.temperature,
     windSpeed: Math.round(filteredStemData[0].observation.wind_speed),

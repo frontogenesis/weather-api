@@ -7,7 +7,7 @@ router.get('/', routeStatus, (_, res) => {
 
     res.render('api', { 
         title: 'The Wet Microburst API',
-        layout: 'layout.hbs',
+        layout: 'layout.handlebars',
     })
 })
 

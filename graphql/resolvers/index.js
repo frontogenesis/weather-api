@@ -5,6 +5,7 @@ const baseUrl = 'https://api.weather.gov/alerts/active?'
 const resolvers = {
     Query: {
         async alerts(parent, { data }, ctx, info) {
+            console.log(ctx.req.headers)
             const alertsEndpoint = data.state ? `${baseUrl}area=${data.state.toUpperCase()}` : 
             `${baseUrl}point=${data.point.lat},${data.point.lon}`
 

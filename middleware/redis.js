@@ -1,7 +1,7 @@
 const Redis = require('redis')
 const client = Redis.createClient()
 
-client.connect()
+//client.connect()
 
 async function getCache(key, data) {
     const exists = await client.exists(key)
