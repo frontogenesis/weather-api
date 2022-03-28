@@ -8,7 +8,7 @@ provider:
   runtime: nodejs14.x
   profile: serverless-admin
   lambdaHashingVersion: 20201221
-  stage: dev
+  stage: production
   region: us-east-1
   apiGateway:
     shouldStartNameWithService: true
